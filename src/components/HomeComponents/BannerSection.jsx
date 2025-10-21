@@ -28,7 +28,7 @@ const BannerSection = () => {
                     Invest in channels or buy only the services you need—monetization, growth, and brand deals managed for you.
                 </p>
 
-                {/* <BannerVideo /> */}
+                <BannerVideo />
 
                 <div className='flex items-center gap-8'>
                     <ButtonArrow>
