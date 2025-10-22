@@ -1,13 +1,16 @@
 import { cn } from '@/lib/utils';
 import React from 'react';
 
-const CommonSection = ({ children, className, ...props }) => {
+const CommonSection = ({ sectionBG, children, className, ...props }) => {
     return (
         <section
-            className={className}
+            className={sectionBG}
         >
             <div
-                className={'container mx-auto py-24'}
+                className={cn(
+                    'container mx-auto py-24',
+                    className
+                )}
                 {...props}
             >
                 {children}

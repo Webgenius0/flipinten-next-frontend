@@ -7,7 +7,7 @@ import BannerVideo from './BannerVideo';
 const BannerSection = () => {
     return (
         <CommonSection
-            className={'bg-gradient-linear'}
+            sectionBG={'bg-gradient-linear'}
         >
             <div
                 className='text-neutral flex flex-col items-center justify-center '
@@ -23,7 +23,7 @@ const BannerSection = () => {
                 </h1>
 
                 <BannerVideo />
-                
+
                 <p
                     className='font-medium text-2xl my-8 max-w-[800px] mx-auto text-center'
                 >
