@@ -25,6 +25,8 @@ body {
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-neutral200: #6A7283;
+  --color-neutral400: #DFE0E4;
+  --color-neutral40: #DFE0E4;
 
 
   --radius-sm: calc(var(--radius) - 4px);
