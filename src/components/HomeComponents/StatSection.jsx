@@ -7,7 +7,7 @@ const StatSection = () => {
         <div
             className='bg-card '
         >
-            <div className='container py-6 mx-auto flex items-center justify-between'>
+            <div className='max-w-[1320] py-6 mx-auto flex items-center justify-between'>
                 <div className='flex items-center gap-12'>
                     {/* logo */}
                     <div className='flex flex-col gap-4'>

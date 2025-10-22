@@ -8,7 +8,7 @@ const CommonSection = ({ sectionBG, children, className, ...props }) => {
         >
             <div
                 className={cn(
-                    'container mx-auto py-24',
+                    'max-w-[1320px] mx-auto py-24',
                     className
                 )}
                 {...props}
