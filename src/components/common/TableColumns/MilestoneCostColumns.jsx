@@ -9,7 +9,7 @@ const MilestoneCostColumns = [
         header: "Milestone & Cost",
         cell: ({ row }) => {
             return (
-                <div className="text-lg text-secondary">
+                <div className="text-lg space-y-2 text-secondary">
                     <p>{row?.original?.label}</p>
                     <p className="font-semibold">({row?.original?.percentage}-{row?.original?.amount})</p>
                 </div>

@@ -32,7 +32,7 @@ const BannerVideo = () => {
             {!isPlaying && (
                 <button
                     onClick={handlePlay}
-                    className="absolute inset-0 flex items-center justify-center w-full h-full"
+                    className="cursor-pointer hover:scale-110 transition-transform duration-300 absolute inset-0 flex items-center justify-center w-full h-full"
                 >
                     <Youtube />
                 </button>
