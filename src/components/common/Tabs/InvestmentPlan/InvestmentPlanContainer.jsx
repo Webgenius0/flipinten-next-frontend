@@ -4,10 +4,10 @@ import {
     TabsList,
     TabsTrigger,
 } from "@/components/ui/tabs"
-import basicPlanData from "@/data/basicPlanData";
 import PlanSection from "./PlanSection";
 import MilestonePaymentSection from "./MilestonePaymentSection";
 import MilestoneCostTable from "./MilestoneCostTable";
+import { basicPlanData, premiumPlanData, wealthPlanData } from "@/data/InvestmentPlanData";
 
 export function InvestmentPlanContainer() {
     return (
@@ -27,13 +27,20 @@ export function InvestmentPlanContainer() {
                     <PlanSection data={basicPlanData} />
                     <MilestonePaymentSection data={basicPlanData} />
                     <MilestoneCostTable data={basicPlanData} />
-                    
                 </TabsContent>
-                <TabsContent value="premium">
-                    ok2
+
+
+                <TabsContent className={'space-y-12'} value="premium">
+                    <PlanSection data={premiumPlanData} />
+                    <MilestonePaymentSection data={premiumPlanData} />
+                    <MilestoneCostTable data={premiumPlanData} />
                 </TabsContent>
-                <TabsContent value="wealth">
-                    ok3
+
+
+                <TabsContent className={'space-y-12'} value="wealth">
+                    <PlanSection data={wealthPlanData} />
+                    <MilestonePaymentSection data={wealthPlanData} />
+                    <MilestoneCostTable data={wealthPlanData} />
                 </TabsContent>
             </Tabs>
         </div>
