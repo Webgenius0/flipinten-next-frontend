@@ -14,7 +14,7 @@ body {
 
 
 @theme inline {
-  --color-color-primary: var(--color);
+  --color-color-primary: var(--color-primary);
   --color-color-secondary: var(--color-secondary);
   --color-neutral: var(--neutral);
   --color-neutral-secondary: var(--neutral-secondary);
@@ -24,6 +24,13 @@ body {
   --color-brand-primary: var(--brand-primary);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+  --color-neutral30: #EBECEF;
+  --color-neutral40: #DFE0E4;
+  --color-neutral100: #798090;
+  --color-neutral300: #5B6477;
+  --color-neutral500: #404A60;
+  --color-neutral200: #6A7283;
+  --color-neutral400: #DFE0E4;
 
 
   --radius-sm: calc(var(--radius) - 4px);
@@ -58,17 +65,18 @@ body {
 }
 
 :root {
-  --color: #1C1D20;
+  --color-primary: #1C1D20;
   --color-secondary: #262629;
   --primary: #E52621;
   --primary-foreground: oklch(0.985 0 0);
-  --brand-primary: red;
+  --brand-primary: #0B0B0B;
   --secondary: #0D0D0D;
   --secondary-foreground: oklch(0.205 0 0);
   --card: #FFF9F9;
   --neutral: white;
   --neutral-secondary: #6A7283;
   --border: #6B7280;
+  --N200: #6A7283;
 
 
   --radius: 0.625rem;
@@ -100,17 +108,18 @@ body {
 }
 
 .dark {
-  --color: #1C1D20;
+  --color-primary: #1C1D20;
   --color-secondary: #262629;
   --primary: #E52621;
   --primary-foreground: oklch(0.985 0 0);
-  --brand-primary: red;
+  --brand-primary: #0B0B0B;
   --secondary: #0D0D0D;
   --secondary-foreground: oklch(0.205 0 0);
   --card: #FFF9F9;
   --neutral: white;
   --neutral-secondary: #6A7283;
   --border: #6B7280;
+  --N200: #6A7283;
 
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);

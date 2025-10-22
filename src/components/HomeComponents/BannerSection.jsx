@@ -1,13 +1,13 @@
 import React from 'react';
-import CommonSection from '../common/CommonSection';
-import Badge from './Badge';
-import ButtonArrow from '../common/ButtonArrow';
+import CommonSection from '../common/CommonSection/CommonSection';
+import Badge from '../common/Badge/Badge';
+import ButtonArrow from '../common/CustomButton/ButtonArrow';
 import BannerVideo from './BannerVideo';
 
 const BannerSection = () => {
     return (
         <CommonSection
-            className={'bg-gradient-linear'}
+            sectionBG={'bg-gradient-linear'}
         >
             <div
                 className='text-neutral flex flex-col items-center justify-center '
@@ -22,13 +22,14 @@ const BannerSection = () => {
                     Let us build your YouTube empire
                 </h1>
 
+                <BannerVideo />
+
                 <p
-                    className='font-medium text-2xl my-8 max-w-[950px] mx-auto text-center'
+                    className='font-medium text-2xl my-8 max-w-[800px] mx-auto text-center'
                 >
                     Invest in channels or buy only the services you need—monetization, growth, and brand deals managed for you.
                 </p>
 
-                {/* <BannerVideo /> */}
 
                 <div className='flex items-center gap-8'>
                     <ButtonArrow>
