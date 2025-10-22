@@ -13,13 +13,13 @@ const NestedNavLink = ({ link }) => {
                 {link?.label}
             </SelectTrigger>
 
-            <SelectContent className="bg-primary">
+            <SelectContent className="bg-primary border-0 !translate-y-3 rounded-none w-full">
                 {link?.childLinks?.map((childLink) => (
                     <SelectItem
                         showIcon={false}
                         key={childLink.label}
                         value={childLink.label}
-                        className="focus:bg-transparent"
+                        className="focus:bg-white/20 rounded-none hover:bg-red-100"
                     >
                         <Link href={childLink.path} className="text-white cursor-pointer">
                             {childLink.label}
