@@ -4,7 +4,8 @@ import {
     TabsList,
     TabsTrigger,
 } from "@/components/ui/tabs"
-import BasicPlanSection from "./BasicPlanSection";
+import basicPlanData from "@/data/basicPlanData";
+import PlanSection from "./PlanSection";
 
 export function InvestmentPlanContainer() {
     return (
@@ -21,7 +22,7 @@ export function InvestmentPlanContainer() {
 
 
                 <TabsContent value="basic">
-                    <BasicPlanSection />
+                    <PlanSection data={basicPlanData} />
                 </TabsContent>
                 <TabsContent value="premium">
                     ok2
