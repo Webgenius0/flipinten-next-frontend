@@ -22,13 +22,14 @@ const BannerSection = () => {
                     Let us build your YouTube empire
                 </h1>
 
+                <BannerVideo />
+                
                 <p
                     className='font-medium text-2xl my-8 max-w-[950px] mx-auto text-center'
                 >
                     Invest in channels or buy only the services you need—monetization, growth, and brand deals managed for you.
                 </p>
 
-                <BannerVideo />
 
                 <div className='flex items-center gap-8'>
                     <ButtonArrow>
