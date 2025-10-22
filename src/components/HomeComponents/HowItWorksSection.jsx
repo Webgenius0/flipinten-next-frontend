@@ -1,6 +1,6 @@
 import React from 'react';
-import CommonSection from '../common/CommonSection';
-import SectionHeading from '../common/SectionHeading';
+import CommonSection from '../common/CommonSection/CommonSection';
+import SectionHeading from '../common/CommonSection/SectionHeading';
 import howItWorks from '@/data/howItWorks';
 import HowItWorksCard from '../common/Cards/HowItWorksCard';
 

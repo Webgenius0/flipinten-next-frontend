@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../ui/button';
+import { Button } from '../../ui/button';
 import { ArrowRight } from 'lucide-react';
 
 const ButtonArrow = ({ variant, children, ...props }) => {
@@ -22,7 +22,7 @@ const ButtonArrow = ({ variant, children, ...props }) => {
             {...props}
         >
             {children}
-            <ArrowRight className="transition-transform duration-300 -translate-x-1 group-hover:translate-x-0" />
+            <ArrowRight className="transition-transform duration-300 -translate-x-1 group-hover:translate-x-2" />
         </Button>
     );
 };

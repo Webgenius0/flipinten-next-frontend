@@ -1,7 +1,7 @@
 import React from 'react';
-import CommonSection from '../common/CommonSection';
-import Badge from './Badge';
-import ButtonArrow from '../common/ButtonArrow';
+import CommonSection from '../common/CommonSection/CommonSection';
+import Badge from '../common/Badge/Badge';
+import ButtonArrow from '../common/CustomButton/ButtonArrow';
 import BannerVideo from './BannerVideo';
 
 const BannerSection = () => {

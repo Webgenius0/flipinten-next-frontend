@@ -1,6 +1,6 @@
 import React from 'react';
-import CommonSection from '../common/CommonSection';
-import SectionHeading from '../common/SectionHeading';
+import CommonSection from '../common/CommonSection/CommonSection';
+import SectionHeading from '../common/CommonSection/SectionHeading';
 import InvestmentPlanContainer from '../common/Tabs/InvestmentPlan/InvestmentPlanContainer';
 
 const InvestmentPlanSection = () => {

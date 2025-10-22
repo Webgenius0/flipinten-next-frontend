@@ -69,7 +69,6 @@ const MilestoneCostColumns = [
                     <span className="overflow-hidden transition-all duration-300 ease-in-out max-w-0 opacity-0 group-hover:max-w-[80px] group-hover:opacity-100 translate-x-full group-hover:translate-x-0">
                         & Start
                     </span>
-
                 </Button>
             </div>
         ),
