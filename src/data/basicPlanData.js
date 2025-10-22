@@ -22,6 +22,62 @@ const basicPlanData = {
             label: 'Guarantees',
             info: 'Refund if not monetized Buyback available',
         },
+    ],
+    milestonePayment: [
+        {
+            id: "m1",
+            percentage: "25%",
+            amount: "¥66,250",
+            facilities: {
+                video: 8,
+                shorts: 6,
+                watchHours: 100,
+                subscribers: 100
+            }
+        },
+        {
+            id: "m2",
+            percentage: "20%",
+            amount: "¥53,000",
+            facilities: {
+                video: 6,
+                shorts: 5,
+                watchHours: 800,
+                subscribers: 250
+            }
+        },
+        {
+            id: "m3",
+            percentage: "20%",
+            amount: "¥53,000",
+            facilities: {
+                video: 6,
+                shorts: 4,
+                watchHours: 2500,
+                subscribers: 500
+            }
+        },
+        {
+            id: "m4",
+            percentage: "20%",
+            amount: "¥53,000",
+            facilities: {
+                video: 5,
+                shorts: 4,
+                watchHours: 3500,
+                subscribers: 800
+            }
+        },
+        {
+            id: "m5",
+            percentage: "15%",
+            amount: "¥39,750",
+            facilities: {
+                watchHours: 3500,
+                subscribers: 800,
+                yppApproval: true
+            }
+        }
     ]
 }
 

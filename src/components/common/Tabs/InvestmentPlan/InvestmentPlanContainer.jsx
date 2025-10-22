@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/tabs"
 import basicPlanData from "@/data/basicPlanData";
 import PlanSection from "./PlanSection";
+import MilestonePaymentSection from "./MilestonePaymentSection";
 
 export function InvestmentPlanContainer() {
     return (
@@ -21,8 +22,9 @@ export function InvestmentPlanContainer() {
 
 
 
-                <TabsContent value="basic">
+                <TabsContent className={'space-y-12'} value="basic">
                     <PlanSection data={basicPlanData} />
+                    <MilestonePaymentSection data={basicPlanData} />
                 </TabsContent>
                 <TabsContent value="premium">
                     ok2
