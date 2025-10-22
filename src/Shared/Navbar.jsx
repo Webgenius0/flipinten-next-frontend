@@ -1,7 +1,7 @@
 'use client'
 
-import NavbarActions from '@/components/Navbar/NavbarActions';
-import NavLinks from '@/components/Navbar/NavLinks';
+import NavbarActions from '@/components/NavbarComponents/NavbarActions';
+import NavLinks from '@/components/NavbarComponents/NavLinks';
 import LogoIcon from '@/components/svg/LogoIcon';
 import { useEffect, useState } from 'react';
 
