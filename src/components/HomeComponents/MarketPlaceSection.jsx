@@ -5,6 +5,7 @@ import marketplaceImage from '@/components/assets/images/marketplace.png'
 import Image from 'next/image';
 import YoutubeStudio from '../svg/YoutubeStudio';
 import { Button } from '../ui/button';
+import { ArrowRight } from 'lucide-react';
 
 const MarketPlaceSection = () => {
     return (
@@ -60,6 +61,13 @@ const MarketPlaceSection = () => {
                     src={marketplaceImage}
                     alt='marketplace'
                 />
+            </div>
+
+            <div className='flex justify-center mt-12'>
+                <Button>
+                    See all
+                    <ArrowRight />
+                </Button>
             </div>
         </CommonSection>
     );
