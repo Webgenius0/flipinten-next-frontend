@@ -26,6 +26,7 @@ const basicPlanData = {
     milestonePayment: [
         {
             id: "m1",
+            label: "M1 - Kickoff & Brand Setup",
             percentage: "25%",
             amount: "¥66,250",
             facilities: {
@@ -37,6 +38,7 @@ const basicPlanData = {
         },
         {
             id: "m2",
+            label: "M2 - Early Traction",
             percentage: "20%",
             amount: "¥53,000",
             facilities: {
@@ -48,6 +50,7 @@ const basicPlanData = {
         },
         {
             id: "m3",
+            label: "M3 - Momentum",
             percentage: "20%",
             amount: "¥53,000",
             facilities: {
@@ -59,6 +62,7 @@ const basicPlanData = {
         },
         {
             id: "m4",
+            label: "M4 - Pre-Monetize",
             percentage: "20%",
             amount: "¥53,000",
             facilities: {
@@ -70,6 +74,7 @@ const basicPlanData = {
         },
         {
             id: "m5",
+            label: "M5 - Monetized",
             percentage: "15%",
             amount: "¥39,750",
             facilities: {

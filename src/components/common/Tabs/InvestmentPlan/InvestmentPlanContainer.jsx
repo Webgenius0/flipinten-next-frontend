@@ -7,6 +7,7 @@ import {
 import basicPlanData from "@/data/basicPlanData";
 import PlanSection from "./PlanSection";
 import MilestonePaymentSection from "./MilestonePaymentSection";
+import MilestoneCostTable from "./MilestoneCostTable";
 
 export function InvestmentPlanContainer() {
     return (
@@ -25,6 +26,8 @@ export function InvestmentPlanContainer() {
                 <TabsContent className={'space-y-12'} value="basic">
                     <PlanSection data={basicPlanData} />
                     <MilestonePaymentSection data={basicPlanData} />
+                    <MilestoneCostTable data={basicPlanData} />
+                    
                 </TabsContent>
                 <TabsContent value="premium">
                     ok2

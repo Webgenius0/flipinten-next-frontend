@@ -1,9 +1,7 @@
 import { CheckCircle, Clock, Film, Users, Video } from "lucide-react";
 
 const MilestonePaymentSection = ({ data }) => {
-
     return (
-
         <div className='p-6 shadow-[0_0_20px_0_rgba(0,0,0,0.08)] rounded-3xl'>
             <h2 className="mb-4 text-primary  font-semibold text-lg">Milestones Payment System</h2>
 
@@ -12,9 +10,8 @@ const MilestonePaymentSection = ({ data }) => {
             <div className="grid grid-cols-5 gap-4 text-secondary ">
                 {
                     data?.milestonePayment?.map(item => {
-                        console.log(item?.facilities?.yppApproval);
                         return (
-                            <div className="p-4 rounded-3xl shadow-[0_0_20px_0_rgba(0,0,0,0.08)] ">
+                            <div key={item.id} className="p-4 rounded-3xl shadow-[0_0_20px_0_rgba(0,0,0,0.08)] ">
                                 <div className="mb-6 text-secondary flex items-center justify-between">
                                     <p className="shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] p-3 bg-primary rounded-full text-neutral font-medium">{item?.id}</p>
                                     <p className="font-medium">({item?.percentage}-{item?.amount})</p>

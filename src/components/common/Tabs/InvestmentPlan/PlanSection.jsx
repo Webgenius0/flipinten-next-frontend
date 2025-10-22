@@ -12,7 +12,7 @@ const PlanSection = ({ data }) => {
                 {
                     data?.planInfo?.map(info => {
                         return (
-                            <div className='border-b border-neutral40 py-2 flex items-center justify-between'>
+                            <div key={info.label} className='border-b border-neutral40 py-2 flex items-center justify-between'>
                                 <p className='text-lg'>{info?.label}:</p>
                                 <p className='text-lg font-medium'>{info?.info}</p>
                             </div>

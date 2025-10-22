@@ -24,9 +24,13 @@ body {
   --color-brand-primary: var(--brand-primary);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+  --color-neutral30: #EBECEF;
+  --color-neutral40: #DFE0E4;
+  --color-neutral100: #798090;
+  --color-neutral300: #5B6477;
+  --color-neutral500: #404A60;
   --color-neutral200: #6A7283;
   --color-neutral400: #DFE0E4;
-  --color-neutral40: #DFE0E4;
 
 
   --radius-sm: calc(var(--radius) - 4px);
@@ -72,7 +76,7 @@ body {
   --neutral: white;
   --neutral-secondary: #6A7283;
   --border: #6B7280;
-  --N200: #6A7283; 
+  --N200: #6A7283;
 
 
   --radius: 0.625rem;
@@ -115,7 +119,7 @@ body {
   --neutral: white;
   --neutral-secondary: #6A7283;
   --border: #6B7280;
-  --N200: #6A7283; 
+  --N200: #6A7283;
 
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
