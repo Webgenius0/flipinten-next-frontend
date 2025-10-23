@@ -14,7 +14,7 @@ const Footer = () => {
       >
         <div className="flex item-start justify-between">
           {/* about  */}
-          <div className="max-w-[374px] space-y-6">
+          <div className="max-w-[374px] flex flex-col gap-6">
             <LogoIcon variant={"secondary"} />
             <p>{footerData?.about}</p>
           </div>
