@@ -23,7 +23,7 @@ const Footer = () => {
           <FooterLinks footerData={footerData} />
 
           {/* email and social icons */}
-          <FooterSocialLinks />
+          <FooterSocialLinks footerData={footerData}/>
         </div>
 
         {/* bottom description */}
