@@ -38,7 +38,7 @@ function AccordionTrigger({ className, children, ...props }) {
         {children}
 
         <div
-          className={"!p-2 btn bg-nuetral text-neutral200 border-neutral200 !font-medium rounded-full border hover:text-primary cursor-pointer"}
+          className={"p-2 btn bg-neutral text-neutral200 border-neutral200 rounded-full border hover:text-primary cursor-pointer"}
         >
           <Plus className="absolute accordion-icon1 transition-all duration-300 ease-in-out" />
           <Minus className="accordion-icon2 transition-all duration-300 ease-in-out" />
