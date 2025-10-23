@@ -5,7 +5,7 @@ import React from 'react';
 const CommonCard = ({ data, Icon=CircleQuestionMark }) => {
     return (
         <div
-            className='space-y-6 bg-neutral text-secondary p-10 shadow-[0_0_20px_0_rgba(0,0,0,0.08)] rounded-3xl'
+            className='hover:scale-105 transition duration-200 ease-in-out group space-y-6 bg-neutral text-secondary p-10 shadow-[0_0_20px_0_rgba(0,0,0,0.08)] hover:shadow-[0_0_56px_0_rgba(0,0,0,0.08)] rounded-3xl'
         >
             <div className='space-y-4 flex flex-col items-center'>
                 <div className='bg-card p-5 rounded-full max-w-max'>
