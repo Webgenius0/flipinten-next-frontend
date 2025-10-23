@@ -13,7 +13,7 @@ const GuaranteesSection = () => {
 
       <div className="grid grid-cols-2 gap-8">
         {/* Guarantee Card 1  */}
-        <div className="flex item-center gap-8 border p-6 rounded-[12px] border-neutral40">
+        <div className="hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out flex item-center gap-8 border p-6 rounded-[12px] border-neutral40">
           <div className="">
             <div className="bg-card-secondary max-w-max p-4 rounded-full">
               <ShieldCheck className="text-brand-secondary" />
@@ -28,7 +28,7 @@ const GuaranteesSection = () => {
         </div>
 
         {/* Guarantee Card 2  */}
-        <div className="flex item-center gap-8 border p-6 rounded-[12px] border-neutral40">
+        <div className="hover:scale-105 hover:shadow-lg transition-all duration-300 flex item-center gap-8 border p-6 rounded-[12px] border-neutral40">
           <div className="">
             <div className="bg-card-secondary max-w-max p-4 rounded-full">
               <DollarSign className="text-brand-secondary" />
