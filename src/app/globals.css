@@ -48,6 +48,7 @@ body {
   --color-secondary-foreground: var(--secondary-foreground);
   --color-neutral30: #ebecef;
   --color-neutral40: #dfe0e4;
+  --color-neutral50: #C1C4CC;
   --color-neutral90: #888e9c;
   --color-neutral100: #798090;
   --color-neutral300: #5b6477;

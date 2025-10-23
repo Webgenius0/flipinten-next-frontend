@@ -24,7 +24,7 @@ const StoriesCard = ({ story }) => {
         <div className="space-y-6">
           {story?.achievements?.map((item, idx) => {
             return (
-              <div key={idx} className="flex items-center gap-6 p-6 bg-neutral rounded-[12px]">
+              <div key={idx} className="group hover:shadow-md transition-all duration-300 ease-in-out flex items-center gap-6 p-6 bg-neutral rounded-[12px]">
                 <div className="bg-primary p-4 max-w-max rounded-2xl">
                   <YoutubeStudio variant={"secondary"} size={25} />
                 </div>
