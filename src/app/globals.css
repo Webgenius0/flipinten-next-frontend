@@ -56,6 +56,7 @@ body {
   --color-neutral500: #404a60;
   --color-neutral200: #6a7283;
   --color-neutral400: #4f586d;
+  --color-neutral600: #343E56;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
