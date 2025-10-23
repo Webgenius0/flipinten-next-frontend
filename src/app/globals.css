@@ -34,21 +34,22 @@ body {
   display: 0;
 }
 
-
 @theme inline {
   --color-color-primary: var(--color-primary);
   --color-color-secondary: var(--color-secondary);
   --color-neutral: var(--neutral);
   --color-neutral-secondary: var(--neutral-secondary);
   --color-card: var(--card);
+  --color-card-secondary: #DBFCE7;
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-brand-primary: var(--brand-primary);
+  --color-brand-secondary: #1ccc62;
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-neutral30: #ebecef;
   --color-neutral40: #dfe0e4;
-  --color-neutral50: #C1C4CC;
+  --color-neutral50: #c1c4cc;
   --color-neutral90: #888e9c;
   --color-neutral100: #798090;
   --color-neutral300: #5b6477;
