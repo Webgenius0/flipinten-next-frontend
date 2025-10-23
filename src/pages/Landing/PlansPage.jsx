@@ -1,3 +1,4 @@
+import FAQSectionCommon from "@/components/commonSections.jsx/FAQSectionCommon";
 import InvestmentPlanSection from "@/components/commonSections.jsx/InvestmentPlanSection";
 import GuaranteesSection from "@/components/PlansComponent.jsx/GuaranteesSection";
 import MonetizationSection from "@/components/PlansComponent.jsx/MonetizationSection";
@@ -11,6 +12,7 @@ const PlansPage = () => {
       <InvestmentPlanSection />
       <GuaranteesSection />
       <MonetizationSection />
+      <FAQSectionCommon />
     </>
   );
 };

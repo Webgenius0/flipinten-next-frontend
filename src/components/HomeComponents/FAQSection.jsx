@@ -7,6 +7,7 @@ import {
 import CommonSection from "../common/CommonSection/CommonSection";
 import SectionHeading from "../common/CommonSection/SectionHeading";
 import { faqData } from "@/data/faqData";
+
 const FAQSection = () => {
   return (
     <CommonSection className={"max-w-[1720px]"}>
@@ -15,6 +16,7 @@ const FAQSection = () => {
         subtitle={"See how has transformed logistics operations for our users"}
       />
 
+      {/* faq accordion  */}
       <Accordion type="single" collapsible defaultValue={1}>
         <div className="grid grid-cols-2 gap-10">
           <div className="justify-between flex flex-col item-start">
