@@ -1,5 +1,6 @@
 import InvestmentPlanSection from "@/components/commonSections.jsx/InvestmentPlanSection";
 import BannerSection from "@/components/HomeComponents/BannerSection";
+import CTASection from "@/components/HomeComponents/CTASection";
 import FAQSection from "@/components/HomeComponents/FAQSection";
 import HowItWorksSection from "@/components/HomeComponents/HowItWorksSection";
 import MarketPlaceSection from "@/components/HomeComponents/MarketPlaceSection";
@@ -18,6 +19,7 @@ const HomePage = () => {
       <MarketPlaceSection />
       <StoriesSection />
       <FAQSection />
+      <CTASection />
     </>
   );
 };
