@@ -37,13 +37,12 @@ function AccordionTrigger({ className, children, ...props }) {
       >
         {children}
 
-        <Button
-          size={"icon"}
-          className={"!p-4 btn bg-nuetral text-neutral200 border-neutral200"}
+        <div
+          className={"!p-2 btn bg-nuetral text-neutral200 border-neutral200 !font-medium rounded-full border hover:text-primary cursor-pointer"}
         >
           <Plus className="absolute accordion-icon1 transition-all duration-300 ease-in-out" />
           <Minus className="accordion-icon2 transition-all duration-300 ease-in-out" />
-        </Button>
+        </div>
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );

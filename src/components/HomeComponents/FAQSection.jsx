@@ -21,7 +21,7 @@ const FAQSection = () => {
             {faqData?.map((faq, idx) => {
               if (idx < faqData.length / 2) {
                 return (
-                  <AccordionItem value={idx + 1}>
+                  <AccordionItem key={idx} value={idx + 1}>
                     <AccordionTrigger>
                       {faq?.id}. {faq?.qs}
                     </AccordionTrigger>
@@ -35,7 +35,7 @@ const FAQSection = () => {
             {faqData?.map((faq, idx) => {
               if (idx >= faqData.length / 2) {
                 return (
-                  <AccordionItem value={idx + 1}>
+                  <AccordionItem key={idx} value={idx + 1}>
                     <AccordionTrigger>
                       {faq?.id}. {faq?.qs}
                     </AccordionTrigger>
