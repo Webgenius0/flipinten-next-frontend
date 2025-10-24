@@ -1,49 +1,39 @@
-import React from 'react';
-import CommonSection from '../common/CommonSection/CommonSection';
-import Badge from '../common/Badge/Badge';
-import ButtonArrow from '../common/CustomButton/ButtonArrow';
-import BannerVideo from './BannerVideo';
+import React from "react";
+import CommonSection from "../common/CommonSection/CommonSection";
+import Badge from "../common/Badge/Badge";
+import ButtonArrow from "../common/CustomButton/ButtonArrow";
+import BannerVideo from "./BannerVideo";
 
 const BannerSection = () => {
-    return (
-        <CommonSection
-            sectionBG={'bg-gradient-linear'}
-        >
-            <div
-                className='text-neutral flex flex-col items-center justify-center '
-            >
-                <Badge>
-                    #1 AI Video Generator with Lifelike AI Avatars
-                </Badge>
+  return (
+    <CommonSection sectionBG={"bg-gradient-linear"}>
+      <div className="text-neutral flex flex-col items-center justify-center ">
+        {/* badge  */}
+        <Badge>#1 AI Video Generator with Lifelike AI Avatars</Badge>
 
-                <h1
-                    className='font-semibold text-5xl mt-4 mb-8'
-                >
-                    Let us build your YouTube empire
-                </h1>
+        {/* title  */}
+        <h1 className="font-semibold text-5xl mt-4 mb-8">
+          Let us build your YouTube empire
+        </h1>
 
-                <BannerVideo />
+        {/* video  */}
+        <BannerVideo />
 
-                <p
-                    className='font-medium text-2xl my-8 max-w-[800px] mx-auto text-center'
-                >
-                    Invest in channels or buy only the services you need—monetization, growth, and brand deals managed for you.
-                </p>
+        {/* subtitle  */}
+        <p className="font-medium text-2xl my-8 max-w-[800px] mx-auto text-center">
+          Invest in channels or buy only the services you need—monetization,
+          growth, and brand deals managed for you.
+        </p>
 
+        {/* buttons  */}
+        <div className="flex items-center gap-8">
+          <ButtonArrow>Get Started</ButtonArrow>
 
-                <div className='flex items-center gap-8'>
-                    <ButtonArrow>
-                        Get Started
-                    </ButtonArrow>
-
-                    <ButtonArrow variant={'secondary'}>
-                        See Plans
-                    </ButtonArrow>
-                </div>
-
-            </div>
-        </CommonSection>
-    );
+          <ButtonArrow variant={"secondary"}>See Plans</ButtonArrow>
+        </div>
+      </div>
+    </CommonSection>
+  );
 };
 
-export default BannerSection;    
+export default BannerSection;

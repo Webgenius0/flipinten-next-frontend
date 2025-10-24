@@ -40,7 +40,7 @@ export function DataTable({ columns, data }) {
                                         <TableHead key={header.id}>
                                             {header.isPlaceholder
                                                 ? null
-                                                : flexRender(
+                                                    : flexRender(
                                                     header.column.columnDef.header,
                                                     header.getContext()
                                                 )}

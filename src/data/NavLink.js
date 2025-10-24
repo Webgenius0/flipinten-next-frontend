@@ -8,8 +8,8 @@ const navLinks = [
         path: '/ytc-services',
         childLinks: [
             {
-                label: 'link1',
-                path: '/'
+                label: 'YTC Services',
+                path: '/ytc-services'
             },
             {
                 label: 'link2',
@@ -34,8 +34,8 @@ const navLinks = [
         path: '/resources',
         childLinks: [
             {
-                label: 'link1',
-                path: '/'
+                label: 'Resources',
+                path: '/resources'
             },
             {
                 label: 'link2',

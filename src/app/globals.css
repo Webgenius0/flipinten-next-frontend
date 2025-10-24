@@ -1,17 +1,38 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @custom-variant dark (&:is(.dark *));
+@font-face {
+  font-family: "Product Sans";
+  src: url("/fonts/ProductSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.download-button {
+  font-family: "Product Sans", sans-serif;
+}
 
 body {
   font-family: Exo;
 }
 
-
 .bg-gradient-linear {
-  background-image: linear-gradient(93deg, #E60000 0.34%, #240000 97.15%);
+  background-image: linear-gradient(93deg, #e60000 0.34%, #240000 97.15%);
 }
 
-
+[data-state="open"] .btn {
+  background-color: #e52621;
+  color: white;
+  border-color: #e52621;
+}
+[data-state="open"] .accordion-icon1 {
+  transform: rotate(180deg);
+  opacity: 0;
+}
+[data-state="closed"] .accordion-icon2 {
+  transform: rotate(-180deg);
+  display: 0;
+}
 
 @theme inline {
   --color-color-primary: var(--color-primary);
@@ -19,20 +40,23 @@ body {
   --color-neutral: var(--neutral);
   --color-neutral-secondary: var(--neutral-secondary);
   --color-card: var(--card);
+  --color-card-secondary: #DBFCE7;
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-brand-primary: var(--brand-primary);
+  --color-brand-secondary: #1ccc62;
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
-  --color-neutral30: #EBECEF;
-  --color-neutral40: #DFE0E4;
-  --color-neutral90: #888E9C;
+  --color-neutral30: #ebecef;
+  --color-neutral40: #dfe0e4;
+  --color-neutral50: #c1c4cc;
+  --color-neutral90: #888e9c;
   --color-neutral100: #798090;
-  --color-neutral300: #5B6477;
-  --color-neutral500: #404A60;
-  --color-neutral200: #6A7283;
-  --color-neutral400: #4F586D;
-
+  --color-neutral300: #5b6477;
+  --color-neutral500: #404a60;
+  --color-neutral200: #6a7283;
+  --color-neutral400: #4f586d;
+  --color-neutral600: #343E56;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -66,19 +90,18 @@ body {
 }
 
 :root {
-  --color-primary: #1C1D20;
+  --color-primary: #1c1d20;
   --color-secondary: #262629;
-  --primary: #E52621;
+  --primary: #e52621;
   --primary-foreground: oklch(0.985 0 0);
-  --brand-primary: #0B0B0B;
-  --secondary: #0D0D0D;
+  --brand-primary: #0b0b0b;
+  --secondary: #0d0d0d;
   --secondary-foreground: oklch(0.205 0 0);
-  --card: #FFF9F9;
+  --card: #fff9f9;
   --neutral: white;
-  --neutral-secondary: #6A7283;
-  --border: #6B7280;
-  --N200: #6A7283;
-
+  --neutral-secondary: #6a7283;
+  --border: #6b7280;
+  --N200: #6a7283;
 
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -109,18 +132,18 @@ body {
 }
 
 .dark {
-  --color-primary: #1C1D20;
+  --color-primary: #1c1d20;
   --color-secondary: #262629;
-  --primary: #E52621;
+  --primary: #e52621;
   --primary-foreground: oklch(0.985 0 0);
-  --brand-primary: #0B0B0B;
-  --secondary: #0D0D0D;
+  --brand-primary: #0b0b0b;
+  --secondary: #0d0d0d;
   --secondary-foreground: oklch(0.205 0 0);
-  --card: #FFF9F9;
+  --card: #fff9f9;
   --neutral: white;
-  --neutral-secondary: #6A7283;
-  --border: #6B7280;
-  --N200: #6A7283;
+  --neutral-secondary: #6a7283;
+  --border: #6b7280;
+  --N200: #6a7283;
 
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);

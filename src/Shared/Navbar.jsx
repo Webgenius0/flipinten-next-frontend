@@ -28,7 +28,7 @@ const Navbar = () => {
     }, [lastScrollY])
 
 
-    console.log(isVisible);
+    
     return (
         <header
             className={`bg-neutral/80 backdrop-blur-md sticky top-0 z-200 transition-transform duration-500 ease-in-out 

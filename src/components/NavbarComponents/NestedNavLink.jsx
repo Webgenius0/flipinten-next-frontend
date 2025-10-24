@@ -1,34 +1,41 @@
+"use client";
+
 import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-} from "@/components/ui/select";
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { ChevronDown } from "lucide-react";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 const NestedNavLink = ({ link }) => {
-    return (
-        <Select>
-            <SelectTrigger className="border-none p-0 text-lg focus-visible:ring-0 shadow-none cursor-pointer text-white">
-                {link?.label}
-            </SelectTrigger>
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger
+        className={cn(
+          "flex items-center gap-2 text-lg text-white cursor-pointer bg-transparent border-none shadow-none outline-none focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0 data-[state=open]:ring-0 data-[state=open]:outline-none data-[state=open]:border-none"
+        )}
+      >
+        {link?.label}
+        <ChevronDown className="scale-80" />
+      </DropdownMenuTrigger>
 
-            <SelectContent className="z-300 bg-primary border-0 rounded-none w-full">
-                {link?.childLinks?.map((childLink) => (
-                    <SelectItem
-                        showIcon={false}
-                        key={childLink.label}
-                        value={childLink.label}
-                        className="focus:bg-white/20 rounded-none hover:bg-red-100"
-                    >
-                        <Link href={childLink.path} className="text-white cursor-pointer">
-                            {childLink.label}
-                        </Link>
-                    </SelectItem>
-                ))}
-            </SelectContent>
-        </Select>
-    );
+      <DropdownMenuContent className="z-[300] bg-primary border-0 rounded-none">
+        {link?.childLinks?.map((childLink) => (
+          <DropdownMenuItem
+            key={childLink.label}
+            className="hover:bg-white/20 text-white cursor-pointer focus:bg-white/20"
+          >
+            <Link href={childLink.path} className="w-full block">
+              {childLink.label}
+            </Link>
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
 };
 
 export default NestedNavLink;
