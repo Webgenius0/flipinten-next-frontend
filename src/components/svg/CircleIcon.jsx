@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 
-const CircleIcon = ({ icon: Icon, className, bg }) => {
+const CircleIcon = ({ icon: Icon, className, bg, iconColor='white' }) => {
   return (
     <div
       className={cn(
@@ -12,7 +12,7 @@ const CircleIcon = ({ icon: Icon, className, bg }) => {
     >
       <Icon
         className="scale-90 absolute"
-        color="white"
+        color={iconColor}
       />
     </div>
   );
