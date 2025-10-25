@@ -5,6 +5,7 @@ import { ArrowRight, DollarSign, TrendingUp, Triangle } from "lucide-react";
 import { Button } from "../ui/button";
 import avatarImage from "@/components/assets/images/avatar.svg";
 import Image from "next/image";
+import PlayCircle from "../svg/PlayCircle";
 
 const CreatorHero = () => {
   return (
@@ -76,13 +77,7 @@ const CreatorHero = () => {
         <div className="flex justify-between items-center bg-card p-4 rounded-[16px]">
           <div className="flex gap-4 items-center">
             {/* circle  */}
-            <div className="w-12 h-12 relative bg-primary rounded-full text-neutral flex items-center justify-center">
-              <Triangle
-                fill={"white"}
-                className="scale-90 rotate-90 absolute translate-x-[2px]"
-                color="white"
-              />
-            </div>
+            <PlayCircle />
 
             <div>
               <p className="text-secondary font-medium text-[20px]">
@@ -136,13 +131,7 @@ const CreatorHero = () => {
             color="white"
           />
         </div>
-        <div className="absolute top-0 -translate-y-1/2 right-0 translate-x-1/2 w-12 h-12 bg-primary rounded-full text-neutral flex items-center justify-center">
-          <Triangle
-            fill={"white"}
-            className="scale-90 rotate-90 absolute translate-x-[2px]"
-            color="white"
-          />
-        </div>
+       <PlayCircle className={'absolute top-0 -translate-y-1/2 right-0 translate-x-1/2 '}/>
       </div>
     </CommonSection>
   );
