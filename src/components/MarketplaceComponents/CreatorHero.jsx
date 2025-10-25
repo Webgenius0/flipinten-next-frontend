@@ -55,6 +55,7 @@ const CreatorHero = () => {
             {[...new Array(4)].map((_, idx) => {
               return (
                 <Image
+                key={idx}
                   src={avatarImage}
                   alt="user"
                   className="absolute"
