@@ -1,3 +1,4 @@
+import FAQSectionCommon from "@/components/commonSections.jsx/FAQSectionCommon";
 import PackagesSection from "@/components/ServicesComponents/PackagesSection";
 import ProcessesSection from "@/components/ServicesComponents/ProcessesSection";
 import YTCServicesTabs from "@/components/ServicesComponents/YTCServicesTabs";
@@ -9,6 +10,8 @@ const YTCServicesPage = () => {
       <YTCServicesTabs />
       <PackagesSection />
       <ProcessesSection />
+
+      <FAQSectionCommon/>
     </>
   );
 };
