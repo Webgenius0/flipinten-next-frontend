@@ -1,7 +1,7 @@
 import React from "react";
 import CommonSection from "../common/CommonSection/CommonSection";
 import Badge from "../common/Badge/Badge";
-import { ArrowRight, DollarSign, Triangle } from "lucide-react";
+import { ArrowRight, DollarSign, TrendingUp, Triangle } from "lucide-react";
 import { Button } from "../ui/button";
 import avatarImage from "@/components/assets/images/avatar.svg";
 import Image from "next/image";
@@ -129,7 +129,14 @@ const CreatorHero = () => {
         </div>
 
         {/* decorations  */}
-        <div className="absolute w-12 h-12 bg-primary rounded-full text-neutral flex items-center justify-center">
+        <div className="absolute left-0 -translate-x-1/2 w-12 h-12 bg-brand-secondary rounded-full text-neutral flex items-center justify-center">
+          <TrendingUp
+            fill={"white"}
+            className="scale-90 absolute translate-x-[2px]"
+            color="white"
+          />
+        </div>
+        <div className="absolute top-0 -translate-y-1/2 right-0 translate-x-1/2 w-12 h-12 bg-primary rounded-full text-neutral flex items-center justify-center">
           <Triangle
             fill={"white"}
             className="scale-90 rotate-90 absolute translate-x-[2px]"
