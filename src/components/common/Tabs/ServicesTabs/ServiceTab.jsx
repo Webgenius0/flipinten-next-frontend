@@ -1,8 +1,8 @@
 import React from "react";
-import { Button } from "../ui/button";
-import BadgeTable from "../common/Badge/BadgeTable";
 import { Star } from "lucide-react";
 import Image from "next/image";
+import BadgeTable from "../../Badge/BadgeTable";
+import { Button } from "@/components/ui/button";
 
 const ServiceTab = ({ service }) => {
   const amount = 8132;

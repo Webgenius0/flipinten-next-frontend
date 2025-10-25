@@ -1,6 +1,6 @@
 import CommonSection from "@/components/common/CommonSection/CommonSection";
 import SectionHeading from "@/components/common/CommonSection/SectionHeading";
-import ServicesTabsContainer from "@/components/ServicesComponents/ServicesTabsContainer";
+import ServicesTabsContainer from "@/components/common/Tabs/ServicesTabs/ServicesTabsContainer";
 import React from "react";
 
 const YTCServicesPage = () => {

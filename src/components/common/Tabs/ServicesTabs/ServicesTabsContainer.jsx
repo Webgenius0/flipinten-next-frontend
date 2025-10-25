@@ -1,6 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import ServiceTab from "./ServiceTab";
 import { youtubeServicesData } from "@/data/youtubeServicesData";
+import ServiceTab from "./ServiceTab";
 
 export function ServicesTabsContainer() {
   return (
