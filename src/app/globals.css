@@ -40,11 +40,11 @@ body {
   --color-neutral: var(--neutral);
   --color-neutral-secondary: var(--neutral-secondary);
   --color-card: var(--card);
-  --color-card-secondary: #DBFCE7;
+  --color-card-secondary: #dbfce7;
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-brand-primary: var(--brand-primary);
-  --color-brand-secondary: #1ccc62;
+  --color-brand-secondary: var(--brand-secondary);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-neutral30: #ebecef;
@@ -56,7 +56,7 @@ body {
   --color-neutral500: #404a60;
   --color-neutral200: #6a7283;
   --color-neutral400: #4f586d;
-  --color-neutral600: #343E56;
+  --color-neutral600: #343e56;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -95,6 +95,7 @@ body {
   --primary: #e52621;
   --primary-foreground: oklch(0.985 0 0);
   --brand-primary: #0b0b0b;
+  --brand-secondary: #1ccc62;
   --secondary: #0d0d0d;
   --secondary-foreground: oklch(0.205 0 0);
   --card: #fff9f9;
@@ -137,6 +138,7 @@ body {
   --primary: #e52621;
   --primary-foreground: oklch(0.985 0 0);
   --brand-primary: #0b0b0b;
+  --brand-secondary: #1ccc62;
   --secondary: #0d0d0d;
   --secondary-foreground: oklch(0.205 0 0);
   --card: #fff9f9;
