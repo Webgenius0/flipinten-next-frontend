@@ -5,9 +5,10 @@ import React from 'react';
 const CommonCard = ({ data, Icon=CircleQuestionMark }) => {
     return (
         <div
-            className='hover:scale-105 transition duration-200 ease-in-out group space-y-6 bg-neutral text-secondary p-10 shadow-[0_0_20px_0_rgba(0,0,0,0.08)] hover:shadow-[0_0_56px_0_rgba(0,0,0,0.08)] rounded-3xl'
+            className='hover:scale-105 transition duration-200 ease-in-out group space-y-6 bg-neutral text-secondary p-6 shadow-[0_0_20px_0_rgba(0,0,0,0.08)] hover:shadow-[0_0_56px_0_rgba(0,0,0,0.08)] rounded-3xl flex flex-col'
         >
-            <div className='space-y-4 flex flex-col items-center'>
+        <div className='flex-1'>
+                <div className='space-y-4 flex flex-col items-center'>
                 <div className='bg-card p-5 rounded-full max-w-max'>
                     <Icon className='text-primary' size={24} />
                 </div>
@@ -20,10 +21,13 @@ const CommonCard = ({ data, Icon=CircleQuestionMark }) => {
             <ul className='space-y-2'>
                 {
                     data?.features?.map((feature, idx) => {
-                        return <li key={idx} className='list-disc list-inside'>{feature}</li>
+                        return <li key={idx} className='list-disc list-inside text-sm'>{feature}</li>
                     })
                 }
             </ul>
+        </div>
+
+
 
             <Button className={'w-full'}>
                 Get Started
