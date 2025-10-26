@@ -72,6 +72,33 @@ const trustData = {
       subtitle: "Verified advertisers",
     },
   ],
+
+  freeLancerTrust: [
+    {
+      color: "#0051FF",
+      icon: Users,
+      stat: "2,500+",
+      title: "Active Creators",
+    },
+    {
+      color: "#FF6200",
+      icon: Star,
+      stat: "$1.2M+",
+      title: "Creator Rating",
+    },
+    {
+      color: "#2FA75F",
+      icon: TrendingUp,
+      stat: "98%",
+      title: "Total Paid out",
+    },
+    {
+      color: "#FFC300",
+      icon: Award,
+      stat: "4.9/5",
+      title: "brand partners",
+    },
+  ],
 };
 
 export { trustData };

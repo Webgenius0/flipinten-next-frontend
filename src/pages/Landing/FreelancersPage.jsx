@@ -1,5 +1,6 @@
 import FreelancersBanner from "@/components/FreelancersPageComponents/FreelancersBanner";
 import HowFreelancersWorks from "@/components/FreelancersPageComponents/HowFreelancersWorks";
+import WhyFreelancersChooseUs from "@/components/FreelancersPageComponents/WhyFreelancersChooseUs";
 import React from "react";
 
 const FreelancersPage = () => {
@@ -7,6 +8,7 @@ const FreelancersPage = () => {
     <>
       <FreelancersBanner />
       <HowFreelancersWorks />
+      <WhyFreelancersChooseUs />
     </>
   );
 };
