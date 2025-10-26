@@ -24,7 +24,7 @@ const SkillsCard = ({ demandingSkill }) => {
           return (
             <p
               key={index}
-              className="bg-neutral20 p-3 rounded text-neutral500 text-xs"
+              className="bg-neutral20 p-3 rounded text-neutral500 text-sm"
             >
               {skill}
             </p>
