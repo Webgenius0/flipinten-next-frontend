@@ -4,6 +4,7 @@ import SectionHeading from "../common/CommonSection/SectionHeading";
 import { trustData } from "@/data/trustData";
 import TrustCard from "../common/Cards/TrustCard";
 import TrustStatCard from "../common/Cards/TrustStatCard";
+import PolicyCard from "./PolicyCard";
 
 const TrustSection = () => {
   return (
@@ -26,11 +27,15 @@ const TrustSection = () => {
 
 
       {/* trust stat cards container  */}
-      <div className="grid grid-cols-4 gap-8 mt-8">
+      <div className="grid grid-cols-4 gap-8 mt-8 mb-8">
         {trustData?.stats?.map((data, idx) => {
           return <TrustStatCard key={idx} data={data} />;
         })}
       </div>
+
+
+      {/* policy card  */}
+      <PolicyCard/>
     </CommonSection>
   );
 };
