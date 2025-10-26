@@ -13,7 +13,10 @@ const colors = [
 
 
 const HowItWorksCard = ({ item, className, idx}) => {
-  const { icon } = item;
+  const { icon, color } = item;
+
+  const bgColor = color || colors[idx%4]
+
   return (
     <div
       className={cn(
@@ -22,7 +25,7 @@ const HowItWorksCard = ({ item, className, idx}) => {
       )}
     >
       <div className="max-w-max mx-auto ">
-        {!!icon ? <CircleIcon bg={colors[idx%4]} icon={icon} /> : <Shield />}
+        {!!icon ? <CircleIcon bg={bgColor} icon={icon} /> : <Shield />}
       </div>
       <h2 className="mt-8 mb-4 text-2xl font-semibold text-color-primary ">
         {item?.label}
