@@ -1,5 +1,6 @@
 import AdvertisersHero from "@/components/AdvertisersPageComponent/AdvertisersHero";
 import AdvertisersStatsSection from "@/components/AdvertisersPageComponent/AdvertisersStatsSection";
+import CampaignSection from "@/components/AdvertisersPageComponent/CampaignSection";
 import React from "react";
 
 const AdvertisersPage = () => {
@@ -7,6 +8,7 @@ const AdvertisersPage = () => {
     <>
       <AdvertisersHero />
       <AdvertisersStatsSection/>
+      <CampaignSection/>
     </>
   );
 };
