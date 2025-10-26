@@ -1,3 +1,4 @@
+import DemandingSkillsSection from "@/components/FreelancersPageComponents/DemandingSkillsSection";
 import FreelancersBanner from "@/components/FreelancersPageComponents/FreelancersBanner";
 import HowFreelancersWorks from "@/components/FreelancersPageComponents/HowFreelancersWorks";
 import WhyFreelancersChooseUs from "@/components/FreelancersPageComponents/WhyFreelancersChooseUs";
@@ -9,6 +10,7 @@ const FreelancersPage = () => {
       <FreelancersBanner />
       <HowFreelancersWorks />
       <WhyFreelancersChooseUs />
+      <DemandingSkillsSection />
     </>
   );
 };

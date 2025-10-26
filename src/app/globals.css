@@ -54,6 +54,7 @@ body {
   --color-brand-secondary: var(--brand-secondary);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+  --color-neutral20: #F5F6F7;
   --color-neutral30: #ebecef;
   --color-neutral40: #dfe0e4;
   --color-neutral50: #c1c4cc;
