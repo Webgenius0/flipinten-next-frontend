@@ -21,7 +21,7 @@ const PolicyCard = () => {
       >
         Read Policy
       </Button>
-    </div>
+    </div>        
   );
 };
 
