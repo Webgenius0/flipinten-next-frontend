@@ -1,4 +1,12 @@
-import { RefreshCw, ShieldCheck, SquareCheckBig } from "lucide-react";
+import {
+  Award,
+  RefreshCw,
+  ShieldCheck,
+  SquareCheckBig,
+  Star,
+  TrendingUp,
+  Users,
+} from "lucide-react";
 
 const trustData = {
   data: [
@@ -36,21 +44,29 @@ const trustData = {
 
   stats: [
     {
+      color: "#0051FF",
+      icon: Users,
       stat: "10,000+",
       title: "Active Creators",
       subtitle: "Earning through our platform",
     },
     {
+      color: "#FFC300",
+      icon: Star,
       stat: "4.9/5",
       title: "Creator Rating",
       subtitle: "Average Satisfaction score",
     },
     {
+      color: "#2FA75F",
+      icon: TrendingUp,
       stat: "$2.3M+",
       title: "Total Paid out",
       subtitle: "To creators this year",
     },
     {
+      color: "#9200FF",
+      icon: Award,
       stat: "10,000+",
       title: "brand partners",
       subtitle: "Verified advertisers",
