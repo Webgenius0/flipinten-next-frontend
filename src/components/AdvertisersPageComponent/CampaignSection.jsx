@@ -21,7 +21,7 @@ const CampaignSection = () => {
 
       {/* button  */}
       <div className=" mt-12 max-w-max mx-auto">
-        <Button className={"!py-7 rounded-xl"}>
+        <Button size={'lg'}>
           Start Building Your campaign Brief <ArrowRight />
         </Button>
       </div>

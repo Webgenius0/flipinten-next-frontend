@@ -78,12 +78,12 @@ const AdvertisersHero = () => {
 
           {/* actions  */}
           <div className="space-x-8">
-            <Button className={"rounded-2xl !py-6"}>
+            <Button size={'lg'}>
               Create Campaign
               <ArrowRight />
             </Button>
 
-            <Button variant={"outline"} className={"rounded-2xl !py-6"}>
+            <Button variant={"outline"} size={'lg'}>
               Learn How It Works
             </Button>
           </div>

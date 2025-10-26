@@ -25,12 +25,12 @@ const NestedNavLink = ({ link }) => {
         <ChevronDown className="scale-80" />
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent className="z-[300] bg-primary border-0 rounded-none">
+      <DropdownMenuContent className="z-300 bg-primary border-0 rounded-none">
         {link?.childLinks?.map((childLink) => (
           <DropdownMenuItem
             key={childLink.label}
             className="hover:bg-white/20 text-white cursor-pointer focus:bg-white/20"
-            onClick={() => setOpen(false)} // 👈 closes menu on click
+            onClick={() => setOpen(false)}
           >
             <Link href={childLink.path} className="w-full block">
               {childLink.label}

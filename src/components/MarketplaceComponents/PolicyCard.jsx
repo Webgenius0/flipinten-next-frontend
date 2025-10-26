@@ -17,7 +17,7 @@ const PolicyCard = () => {
 
       <Button
         variant={"outline"}
-        className={"rounded-[8px] bg-[#F3E8FF] text-[#9000FF] border-[#9000FF]"}
+        className={"rounded-xl bg-[#F3E8FF] text-[#9000FF] border-[#9000FF]"}
       >
         Read Policy
       </Button>

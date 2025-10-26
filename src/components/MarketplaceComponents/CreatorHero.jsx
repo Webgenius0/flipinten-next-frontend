@@ -40,12 +40,12 @@ const CreatorHero = () => {
         <div className="space-y-6">
           {/* actions  */}
           <div className="space-x-8 mt-12">
-            <Button className={"rounded-2xl !py-6"}>
+            <Button size={'lg'}>
               List Your Channel
               <ArrowRight />
             </Button>
 
-            <Button variant={"outline"} className={"rounded-2xl !py-6"}>
+            <Button variant={"outline"} size={'lg'}>
               Learn How It Works
             </Button>
           </div>
@@ -75,7 +75,7 @@ const CreatorHero = () => {
       {/* right content  */}
       <div className="relative flex-1 max-w-[560px] bg-neutral rounded-[12px] p-8 space-y-6">
         {/* top content */}
-        <div className="flex justify-between items-center bg-card p-4 rounded-[16px]">
+        <div className="flex justify-between items-center bg-card p-4 rounded-2xl">
           <div className="flex gap-4 items-center">
             {/* circle  */}
             <PlayCircle />
@@ -100,7 +100,7 @@ const CreatorHero = () => {
         </div>
 
         {/* earning stat  */}
-        <div className="flex items-center flex-col gap-6 bg-brand-secondary/20 p-8 rounded-[8px] text-brand-secondary font-medium">
+        <div className="flex items-center flex-col gap-6 bg-brand-secondary/20 p-8 rounded-xl text-brand-secondary font-medium">
           <p>This Month’s Earnings</p>
           <p className="text-3xl font-bold">$14,450</p>
           <p>+24% from last month</p>
@@ -128,7 +128,7 @@ const CreatorHero = () => {
         <div className="absolute left-0 -translate-x-1/2 w-12 h-12 bg-brand-secondary rounded-full text-neutral flex items-center justify-center">
           <TrendingUp
             fill={"white"}
-            className="scale-90 absolute translate-x-[2px]"
+            className="scale-90 absolute translate-x-0.5"
             color="white"
           />
         </div>
