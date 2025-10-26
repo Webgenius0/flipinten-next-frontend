@@ -18,6 +18,7 @@ const howItWorks = [
   },
 ];
 
+
 const howMarketplaceWorks = [
   {
     icon: UserPlus,
@@ -45,5 +46,33 @@ const howMarketplaceWorks = [
   },
 ];
 
+
+const howFreelancersWorks = [
+  {
+    icon: UserPlus,
+    label: "Create Profile",
+    description:
+      "Showcase your skills, portfolio, and set your rates",
+  },
+  {
+    icon: ListCheck,
+    label: "Get Verified",
+    description:
+      "Complete skill assessments and verification process",
+  },
+  {
+    icon: Video,
+    label: "Browse Projects",
+    description:
+      "Find projects that match your skills and availability",
+  },
+  {
+    icon: DollarSign,
+    label: "Deliver & Earn",
+    description:
+      "Complete projects on time and get paid automatically",
+  },
+];
+
 export default howItWorks;
-export { howMarketplaceWorks };
+export { howMarketplaceWorks, howFreelancersWorks };

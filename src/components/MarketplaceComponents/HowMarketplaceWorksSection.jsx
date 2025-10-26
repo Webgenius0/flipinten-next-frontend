@@ -10,7 +10,7 @@ const HowMarketplaceWorksSection = () => {
         <CommonSection>
             <SectionHeading
                 title={'How It Works'}
-                subtitle={'Three simple ways to grow your YouTub presence and masimize your revenue potential'}
+                subtitle={'From channel connection to getting paid, our streamlined process makes brand partnerships effortless for creators.'}
             />
 
             {/* procedures container  */}
