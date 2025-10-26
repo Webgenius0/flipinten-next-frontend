@@ -3,15 +3,12 @@ import CommonSection from "../common/CommonSection/CommonSection";
 import Badge from "../common/Badge/Badge";
 import {
   ArrowRight,
-  DollarSign,
   ShieldCheck,
-  TrendingUp,
   Users,
 } from "lucide-react";
 import { Button } from "../ui/button";
-import avatarImage from "@/components/assets/images/avatar.svg";
+import avatarImage from "@/components/assets/images/avatar2.svg";
 import Image from "next/image";
-import PlayCircle from "../svg/PlayCircle";
 import Brand from "../svg/Brand";
 import Startup from "../svg/Startup";
 import Saas from "../svg/Saas";
@@ -65,7 +62,7 @@ const AdvertisersHero = () => {
 
         <div className="">
           {/* verified and escrow stats */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 mb-6">
             <p className="py-1 text-lg font-medium text-neutral500 flex items-center gap-2">
               <Users />
               <span className="text-brand-secondary">10k+</span>
@@ -82,7 +79,7 @@ const AdvertisersHero = () => {
           {/* actions  */}
           <div className="space-x-8">
             <Button className={"rounded-2xl !py-6"}>
-              List Your Channel
+              Create Campaign
               <ArrowRight />
             </Button>
 
@@ -114,8 +111,6 @@ const AdvertisersHero = () => {
               </div>
             );
           })}
-
-
 
           <div className="bg-card absolute bottom-0 left-0 w-[50%] h-20 -translate-x-12 translate-y-6 rounded-2xl" />
           <Button
