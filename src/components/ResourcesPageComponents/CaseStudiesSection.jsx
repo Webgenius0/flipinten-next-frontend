@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import CommonSection from "../common/CommonSection/CommonSection";
 import SectionHeading from "../common/CommonSection/SectionHeading";
 import CaseStudiesFilters from "./CaseStudiesFilters";
@@ -22,7 +22,9 @@ const CaseStudiesSection = () => {
         />
 
         {/* filters  */}
-        <CaseStudiesFilters />
+        <Suspense fallback={<div>Loading filters...</div>}>
+          <CaseStudiesFilters />
+        </Suspense>
       </CommonSection>
 
       {/* case studies container  */}
