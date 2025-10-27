@@ -25,6 +25,8 @@ const NestedNavLink = ({ link }) => {
         <ChevronDown className="scale-80" />
       </DropdownMenuTrigger>
 
+
+      {/* child links  */}
       <DropdownMenuContent className="z-300 bg-primary border-0 rounded-none">
         {link?.childLinks?.map((childLink) => (
           <DropdownMenuItem

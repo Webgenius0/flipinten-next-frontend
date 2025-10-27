@@ -38,8 +38,12 @@ const navLinks = [
                 path: '/resources'
             },
             {
-                label: 'link2',
-                path: '/'
+                label: 'Case Studies',
+                path: '/resources/case-studies'
+            },
+            {
+                label: 'Blogs',
+                path: '/resources/blogs'
             },
         ]
     },
