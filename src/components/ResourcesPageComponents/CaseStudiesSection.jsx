@@ -2,6 +2,7 @@ import React from "react";
 import CommonSection from "../common/CommonSection/CommonSection";
 import SectionHeading from "../common/CommonSection/SectionHeading";
 import CaseStudiesFilters from "./CaseStudiesFilters";
+import CaseStudiesContainer from "./CaseStudiesContainer";
 
 const CaseStudiesSection = () => {
   return (
@@ -21,10 +22,11 @@ const CaseStudiesSection = () => {
         />
 
         {/* filters  */}
-        <CaseStudiesFilters/>
+        <CaseStudiesFilters />
+      </CommonSection>
 
-        
-      </CommonSection> 
+      {/* case studies container  */}
+      <CaseStudiesContainer />
     </>
   );
 };
