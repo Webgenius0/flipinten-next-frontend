@@ -33,12 +33,11 @@ body {
   transform: rotate(-180deg);
   display: 0;
 }
-.transition-ease-in-out{
+.transition-ease-in-out {
   transition: all;
   transition-duration: 300ms;
   animation: ease-in-out;
 }
-
 
 @theme inline {
   /* custom colors  */
@@ -54,11 +53,11 @@ body {
   --color-brand-secondary: var(--brand-secondary);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
-  --color-neutral20: #F5F6F7;
+  --color-neutral20: #f5f6f7;
   --color-neutral30: #ebecef;
   --color-neutral40: #dfe0e4;
   --color-neutral50: #c1c4cc;
-  --color-neutral80: #979CA8;
+  --color-neutral80: #979ca8;
   --color-neutral90: #888e9c;
   --color-neutral100: #798090;
   --color-neutral300: #5b6477;
@@ -197,4 +196,20 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* For the Scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 3px;
 }
