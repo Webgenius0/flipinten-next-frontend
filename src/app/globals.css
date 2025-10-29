@@ -33,30 +33,41 @@ body {
   transform: rotate(-180deg);
   display: 0;
 }
+.transition-ease-in-out{
+  transition: all;
+  transition-duration: 300ms;
+  animation: ease-in-out;
+}
+
 
 @theme inline {
+  /* custom colors  */
   --color-color-primary: var(--color-primary);
   --color-color-secondary: var(--color-secondary);
   --color-neutral: var(--neutral);
   --color-neutral-secondary: var(--neutral-secondary);
   --color-card: var(--card);
-  --color-card-secondary: #DBFCE7;
+  --color-card-secondary: #dbfce7;
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-brand-primary: var(--brand-primary);
-  --color-brand-secondary: #1ccc62;
+  --color-brand-secondary: var(--brand-secondary);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+  --color-neutral20: #F5F6F7;
   --color-neutral30: #ebecef;
   --color-neutral40: #dfe0e4;
   --color-neutral50: #c1c4cc;
+  --color-neutral80: #979CA8;
   --color-neutral90: #888e9c;
   --color-neutral100: #798090;
   --color-neutral300: #5b6477;
   --color-neutral500: #404a60;
   --color-neutral200: #6a7283;
   --color-neutral400: #4f586d;
-  --color-neutral600: #343E56;
+  --color-neutral600: #343e56;
+  --color-neutral700: #222e48;
+  /* custom colors  */
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -90,11 +101,13 @@ body {
 }
 
 :root {
+  /* custom color variables  */
   --color-primary: #1c1d20;
   --color-secondary: #262629;
   --primary: #e52621;
   --primary-foreground: oklch(0.985 0 0);
   --brand-primary: #0b0b0b;
+  --brand-secondary: #1ccc62;
   --secondary: #0d0d0d;
   --secondary-foreground: oklch(0.205 0 0);
   --card: #fff9f9;
@@ -102,6 +115,7 @@ body {
   --neutral-secondary: #6a7283;
   --border: #6b7280;
   --N200: #6a7283;
+  /* custom color variables  */
 
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -132,11 +146,13 @@ body {
 }
 
 .dark {
+  /* custom color variables  */
   --color-primary: #1c1d20;
   --color-secondary: #262629;
   --primary: #e52621;
   --primary-foreground: oklch(0.985 0 0);
   --brand-primary: #0b0b0b;
+  --brand-secondary: #1ccc62;
   --secondary: #0d0d0d;
   --secondary-foreground: oklch(0.205 0 0);
   --card: #fff9f9;
@@ -144,6 +160,7 @@ body {
   --neutral-secondary: #6a7283;
   --border: #6b7280;
   --N200: #6a7283;
+  /* custom color variables  */
 
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
