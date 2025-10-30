@@ -3,7 +3,7 @@ import CommonSection from "../common/CommonSection/CommonSection";
 import Badge from "../common/Badge/Badge";
 import { ArrowRight, DollarSign, TrendingUp, Triangle } from "lucide-react";
 import { Button } from "../ui/button";
-import avatarImage from "@/components/assets/images/avatar.svg";
+import avatarImage from "@/assets/images/avatar.svg";
 import Image from "next/image";
 import PlayCircle from "../svg/PlayCircle";
 

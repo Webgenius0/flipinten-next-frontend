@@ -1,4 +1,4 @@
-import blocks from "@/components/assets/images/blocks.png";
+import blocks from "@/assets/images/blocks.png";
 import CommonSection from "../common/CommonSection/CommonSection";
 import SectionHeading from "../common/CommonSection/SectionHeading";
 import Image from "next/image";

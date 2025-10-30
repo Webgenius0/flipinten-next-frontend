@@ -1,4 +1,4 @@
-import image from "@/components/assets/images/marketplace.png";
+import image from "@/assets/images/marketplace.png";
 
 const actionsData = [
   {

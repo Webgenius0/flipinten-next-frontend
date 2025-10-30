@@ -1,6 +1,6 @@
-import seoImage from "@/components/assets/images/seo.png";
-import videoImage from "@/components/assets/images/video.png";
-import voiceImage from "@/components/assets/images/voice.png";
+import seoImage from "@/assets/images/seo.png";
+import videoImage from "@/assets/images/video.png";
+import voiceImage from "@/assets/images/voice.png";
 
 const youtubeServicesData = {
   seo: {

@@ -1,4 +1,4 @@
-import logo from "@/components/assets/icon/logo.svg";
+import logo from "@/assets/icon/logo.svg";
 import Image from "next/image";
 import LogoWhite from "./LogoWhite";
 import Link from "next/link";
