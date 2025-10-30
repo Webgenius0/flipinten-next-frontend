@@ -1,4 +1,4 @@
-import freelancerImage from "@/components/assets/images/freelancer.png";
+import freelancerImage from "@/assets/images/freelancer.png";
 
 const freelancerStories = [
   {

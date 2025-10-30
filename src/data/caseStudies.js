@@ -1,5 +1,5 @@
-import Image1 from '@/components/assets/images/caseStudy1.png'
-import Image2 from '@/components/assets/images/caseStudy2.png'
+import Image1 from '@/assets/images/caseStudy1.png'
+import Image2 from '@/assets/images/caseStudy2.png'
 
 const caseStudies = [
   {
