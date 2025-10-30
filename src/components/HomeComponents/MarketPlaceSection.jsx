@@ -1,7 +1,7 @@
 import React from "react";
 import CommonSection from "../common/CommonSection/CommonSection";
 import SectionHeading from "../common/CommonSection/SectionHeading";
-import marketplaceImage from "@/components/assets/images/marketplace.png";
+import marketplaceImage from "@/assets/images/marketplace.png";
 import Image from "next/image";
 import YoutubeStudio from "../svg/YoutubeStudio";
 import { Button } from "../ui/button";

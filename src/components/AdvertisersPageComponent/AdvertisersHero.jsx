@@ -7,7 +7,7 @@ import {
   Users,
 } from "lucide-react";
 import { Button } from "../ui/button";
-import avatarImage from "@/components/assets/images/avatar2.svg";
+import avatarImage from "@/assets/images/avatar2.svg";
 import Image from "next/image";
 import Brand from "../svg/Brand";
 import Startup from "../svg/Startup";
