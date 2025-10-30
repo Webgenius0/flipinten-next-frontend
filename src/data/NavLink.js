@@ -45,6 +45,10 @@ const navLinks = [
                 label: 'Blogs',
                 path: '/resources/blogs'
             },
+            {
+                label: 'Faqs',
+                path: '/resources/faqs'
+            },
         ]
     },
     {
