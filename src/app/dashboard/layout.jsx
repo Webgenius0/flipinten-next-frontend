@@ -14,11 +14,11 @@ const layout = ({ children }) => {
       </div>
 
       <div className="w-[calc(100%-300px)] h-screen flex flex-col">
-        <div className="w-full h-[100px] bg-white">
+        <div className="w-full h-[90px] bg-white">
           <DashboardTopbar />
         </div>
 
-        <div className="w-full h-[calc(100vh-100px)] bg-neutral-100 p-10 overflow-y-scroll custom-scrollbar pb-10">
+        <div className="w-full h-[calc(100vh-90px)] bg-neutral-100 p-10 overflow-y-scroll custom-scrollbar pb-10">
           {children}
         </div>
       </div>
