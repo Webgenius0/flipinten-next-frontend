@@ -1,3 +1,5 @@
+'use client'
+
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cva } from "class-variance-authority";
@@ -41,6 +43,7 @@ function Button({
   className,
   variant,
   size,
+  onClick,
   asChild = false,
   ...props
 }) {
@@ -49,6 +52,7 @@ function Button({
   return (
     <Comp
       data-slot="button"
+      onClick={() => console.log(onClick)}
       className={cn(buttonVariants({ variant, size, className }))}
       {...props} />
   );
