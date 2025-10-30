@@ -15,9 +15,9 @@ export default function BlogBlogs() {
         {blogs?.map((blog, idx) => (
           <div
             key={idx}
-            className="bg-white p-8 rounded-2xl shadow-sm space-y-4"
+            className="bg-white p-8 rounded-2xl shadow-sm space-y-5"
           >
-            <div className="w-full h-[361px] rounded-xl overflow-hidden">
+            <div className="w-full h-[361px] rounded-xl overflow-hidden ">
               <img
                 src={blog?.image?.src}
                 alt={blog?.author}
@@ -25,7 +25,7 @@ export default function BlogBlogs() {
               />
             </div>
 
-            <div className="">
+            <div className="space-y-4">
               <div className="text-lg font-medium flex items-center justify-between">
                 <p className="text-primary bg-[#FEE2E2] py-1.5 px-3 rounded-full">
                   {blog?.category}
@@ -37,20 +37,20 @@ export default function BlogBlogs() {
                 {blog?.title}
               </p>
 
-              <p className="text-base font-medium text-neutral-300">
+              <p className="text-base font-medium text-neutral-400">
                 {blog?.description}
               </p>
 
               <div className="w-full mt-2 flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <div className="text-base text-neutral-300 flex items-center gap-3">
+                  <div className="text-base text-neutral-400 flex items-center gap-3">
                     <p className="w-6 h-6">
                       <UserSvg />
                     </p>
                     <p>{blog?.author}</p>
                   </div>
 
-                  <div className="text-base text-neutral-300 flex items-center gap-3">
+                  <div className="text-base text-neutral-400 flex items-center gap-3">
                     <p className="w-6 h-6">
                       <CalendarSvg />
                     </p>
