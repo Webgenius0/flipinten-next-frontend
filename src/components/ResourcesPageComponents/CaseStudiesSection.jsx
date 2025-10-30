@@ -3,6 +3,7 @@ import CommonSection from "../common/CommonSection/CommonSection";
 import SectionHeading from "../common/CommonSection/SectionHeading";
 import CaseStudiesFilters from "./CaseStudiesFilters";
 import CaseStudiesContainer from "./CaseStudiesContainer";
+import CaseStudiesTrackRecord from "./CaseStudiesTrackRecord";
 
 const CaseStudiesSection = () => {
   return (
@@ -29,6 +30,9 @@ const CaseStudiesSection = () => {
 
       {/* case studies container  */}
       <CaseStudiesContainer />
+
+      {/* track record */}
+      <CaseStudiesTrackRecord />
     </>
   );
 };
