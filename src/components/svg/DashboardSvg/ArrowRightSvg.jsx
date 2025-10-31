@@ -11,7 +11,7 @@ export default function ArrowRightSvg() {
       <path
         d="M19 12H5M19 12L13 18M19 12L13 6"
         stroke="white"
-        stroke-width="2.5"
+        strokeWidth="2.5"
         stroke-linecap="round"
         stroke-linejoin="round"
       />

@@ -1,5 +1,8 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import MyChannelPerformance from "./MyChannelPerformance";
+import MyChannelEarnings from "./MyChannelEarnings";
+import MyChannelBrandEndorsement from "@/pages/Dashboard/MyChannelsPages/MyChannelBrandEndorsement";
+import MyChannelSales from "@/pages/Dashboard/MyChannelsPages/MyChannelSales";
 
 export default function ChannelProfileDetailsSteps() {
   return (
@@ -32,16 +35,16 @@ export default function ChannelProfileDetailsSteps() {
 
         {/* tab 2  */}
         <TabsContent className={"space-y-12"} value="earnings">
-          content 2
+          <MyChannelEarnings />
         </TabsContent>
 
         {/* tab 3 */}
         <TabsContent className={"space-y-12"} value="endorsements">
-          content 3
+          <MyChannelBrandEndorsement />
         </TabsContent>
         {/* tab 3 */}
         <TabsContent className={"space-y-12"} value="sales">
-          content 4
+          <MyChannelSales />
         </TabsContent>
       </Tabs>
     </div>
