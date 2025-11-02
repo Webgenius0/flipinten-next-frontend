@@ -12,7 +12,7 @@ export default function MyReferralsPage() {
       <MyReferralsCode />
       <MyReferralsTable />
       <MyReferralRecentPayouts />
-      <MyReferralFaq />
+      {/* <MyReferralFaq /> */}
     </div>
   );
 }
