@@ -6,7 +6,7 @@ export default function PaymentHistory() {
 
   return (
     <div>
-      <p className="text-2xl font-medium">Payment History</p>
+      <p className="text-2xl font-medium">Payout History</p>
 
       <div className="space-y-6 mt-6">
         {paymentHistory?.map((payment, idx) => (

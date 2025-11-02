@@ -1,5 +1,7 @@
 import React from "react";
 import img from "../../../assets/images/brandProfile.png";
+import DocumentsSvg from "@/components/svg/DashboardSvg/DocumentsSvg";
+import DownloadSvg from "@/components/svg/DashboardSvg/DownloadSvg";
 
 const details = {
   id: 1,
@@ -27,7 +29,7 @@ const details = {
 export default function MyChannelBrandEndormentDetails() {
   return (
     <div className="border border-[#C1C4CC] py-8 px-12 rounded-3xl">
-        {/* profile */}
+      {/* profile */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <div className="w-[70px] h-[70px] rounded-[12px]">
@@ -55,38 +57,93 @@ export default function MyChannelBrandEndormentDetails() {
       {/* infos */}
       <div className="flex items-center justify-between my-8">
         <div>
-            <p className="text-neutral100 text-base">Deal Type</p>
-            <p className="text-xl font-semibold text-neutral700">{details?.type}</p>
+          <p className="text-neutral100 text-base">Deal Type</p>
+          <p className="text-xl font-semibold text-neutral700">
+            {details?.type}
+          </p>
         </div>
 
         <div>
-            <p className="text-neutral100 text-base">Duration</p>
-            <p className="text-xl font-semibold text-neutral700">{details?.duration}</p>
+          <p className="text-neutral100 text-base">Duration</p>
+          <p className="text-xl font-semibold text-neutral700">
+            {details?.duration}
+          </p>
         </div>
         <div>
-            <p className="text-neutral100 text-base">Contract Value</p>
-            <p className="text-xl font-semibold text-neutral700">{details?.contractValue}</p>
+          <p className="text-neutral100 text-base">Contract Value</p>
+          <p className="text-xl font-semibold text-neutral700">
+            {details?.contractValue}
+          </p>
         </div>
         <div>
-            <p className="text-neutral100 text-base">Deliverables</p>
-            <p className="text-xl font-semibold text-neutral700">{details?.deliverables}</p>
+          <p className="text-neutral100 text-base">Deliverables</p>
+          <p className="text-xl font-semibold text-neutral700">
+            {details?.deliverables}
+          </p>
         </div>
       </div>
 
       {/* cards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <div className={'text-[#1CCC62] bg-[#E8FFEF] p-8 flex flex-col justify-between rounded-3xl'}>
-            <p className="text-xl ">Your Share {details?.userShare?.percentage}</p>
-            <p className="text-[32px] font-semibold leading-10">{details?.userShare?.amount}</p>
+        <div
+          className={
+            "text-[#1CCC62] bg-[#E8FFEF] p-8 flex flex-col justify-between rounded-3xl"
+          }
+        >
+          <p className="text-xl ">
+            Your Share {details?.userShare?.percentage}
+          </p>
+          <p className="text-[32px] font-semibold leading-10">
+            {details?.userShare?.amount}
+          </p>
         </div>
-        <div className={'text-[#2B82FF] bg-[#EEF5FF] p-8 flex flex-col justify-between rounded-3xl'}>
-            <p className="text-xl ">YTStart share {details?.platformShare?.percentage}</p>
-            <p className="text-[32px] font-semibold leading-10">{details?.platformShare?.amount}</p>
+        <div
+          className={
+            "text-[#2B82FF] bg-[#EEF5FF] p-8 flex flex-col justify-between rounded-3xl"
+          }
+        >
+          <p className="text-xl ">
+            YTStart share {details?.platformShare?.percentage}
+          </p>
+          <p className="text-[32px] font-semibold leading-10">
+            {details?.platformShare?.amount}
+          </p>
         </div>
-        <div className={'text-[#962CFF] bg-[#F6EDFF] p-8 flex flex-col justify-between rounded-3xl'}>
-            <p className="text-xl ">Payment due</p>
-            <p className="text-[32px] font-semibold leading-10">{details?.paymentDue}</p>
+        <div
+          className={
+            "text-[#962CFF] bg-[#F6EDFF] p-8 flex flex-col justify-between rounded-3xl"
+          }
+        >
+          <p className="text-xl ">Payment due</p>
+          <p className="text-[32px] font-semibold leading-10">
+            {details?.paymentDue}
+          </p>
         </div>
+      </div>
+
+      <div className="mt-8 flex items-center justify-between gap-4">
+        <div className="flex items-center gap-3">
+          <p className="w-6 h-6">
+            <DocumentsSvg />
+          </p>
+          <p className="text-neutral200 text-xl leading-[30px]">
+            2 Proof Documents
+          </p>
+        </div>
+
+        <div className="flex items-center gap-4">
+          <button className="py-3 px-6 border border-neutral500 rounded-[12px] flex items-center gap-3">
+            <p className="w-6 h-6">
+              <DownloadSvg />
+            </p>
+            <p className="text-neutral500 text-base font-semibold">View All</p>
+          </button>
+
+          <button className="bg-[#1CCC62] border border-[#1CCC62] py-3 px-6 rounded-[12px] font-semibold text-white cursor-pointer hover:bg-white hover:text-[#1CCC62] duration-300 ease-in-out ">
+            Received
+          </button>
+        </div>
+
       </div>
     </div>
   );
