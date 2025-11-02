@@ -14,7 +14,7 @@ export default function useMyReferralsCardDataQuery() {
     },
     {
       id: 2,
-      title: "Activ Referrals",
+      title: "Active Referrals",
       value: "2",
       icon: <PencilScaleSvg />,
       color: "#10AD41",
