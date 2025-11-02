@@ -1,6 +1,14 @@
 "use client";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import useMyReferralsTableDataQuery from "@/hooks/Dashboard/useMyReferralsTableDataQuery";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import useBillingTableDataQuery from "@/hooks/Dashboard/useBillingTableDataQuery";
+
 import {
   flexRender,
   getCoreRowModel,
@@ -8,59 +16,72 @@ import {
 } from "@tanstack/react-table";
 import React from "react";
 
+export default function TransactionHistoryTable() {
+  const billingHistory = useBillingTableDataQuery();
 
-export default function MyReferralsTable() {
-  const referrals = useMyReferralsTableDataQuery();
-
-  const active = 'text-[#1CCC62] bg-[#1CCC62]/15';
-  const pending = 'text-[#FFC700] bg-[#FFC70026]'
+  const active = "text-[#1CCC62] bg-[#1CCC62]/15";
+  const pending = "text-[#FFC700] bg-[#FFC70026]";
 
   const columns = [
     {
-      accessorKey: "date",
-      header: "Date",
+      accessorKey: "orderDate",
+      header: "Order Date",
     },
     {
-      accessorKey: "referralClient",
-      header: "Referral client",
+      accessorKey: "orderId",
+      header: "Order Id",
     },
     {
-      accessorKey: "source",
-      header: "Source",
-      cell: (info) => {
-        const data = info?.getValue()
-        return <p className="py-2 px-4 border border-neutral500 rounded-full text-sm ">{data}</p>
-      }
+      accessorKey: "channel",
+      header: "Channel",
     },
     {
-      accessorKey: "ytStartEarnings",
-      header: "YTStart Earnings",
+      accessorKey: "invoiceId",
+      header: "Invoice Id",
     },
     {
-      accessorKey: "bonus",
-      header: "Your 5% Bonus",
+      accessorKey: "amount",
+      header: "Amount",
     },
     {
       accessorKey: "status",
       header: "Status",
       cell: (info) => {
         const status = info?.getValue();
-        return <p className={`py-1 px-6 rounded-full text-sm ${status.toLowerCase() === 'paid' ? active : pending}`}>{status}</p>
-
-      }
+        return (
+          <p
+            className={`py-1 px-6 rounded-full text-sm ${
+              status.toLowerCase() === "paid" ? active : pending
+            }`}
+          >
+            {status}
+          </p>
+        );
+      },
+    },
+    {
+      accessorKey: "action",
+      header: "Action",
+      cell: (info) => {
+        const data = info?.getValue();
+        return (
+          <button type="button" className="underline cursor-pointer">
+            {data}
+          </button>
+        );
+      },
     },
   ];
 
   const tableInstance = useReactTable({
     columns,
-    data: referrals,
+    data: billingHistory,
     getCoreRowModel: getCoreRowModel(),
   });
-  
+
   return (
     <div className="bg-white w-full p-8 rounded-2xl">
-     
-
+      <p className="text-2xl font-bold mb-4">Transaction History</p>
       <Table className={"rounded-lg overflow-hidden text-base text-[#1C1D20]"}>
         <TableHeader>
           {tableInstance?.getHeaderGroups()?.map((headerGroup, idx) => (
@@ -68,7 +89,7 @@ export default function MyReferralsTable() {
               {headerGroup?.headers?.map((header, idx) => (
                 <TableHead
                   key={idx}
-                  className="p-4 font-semibold bg-[#FFE3E3] text-center  text-neutral500"
+                  className="p-4 font-semibold bg-[#1CCC62] text-center text-white border border-neutral400 border-collapse"
                 >
                   {flexRender(
                     header.column.columnDef.header,
@@ -85,7 +106,7 @@ export default function MyReferralsTable() {
               {row?.getVisibleCells()?.map((cell, idx) => (
                 <TableCell
                   key={idx}
-                  className="p-4  text-center"
+                  className="p-4  text-center border border-[#A6AAB5] border-collapse"
                 >
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
                 </TableCell>
