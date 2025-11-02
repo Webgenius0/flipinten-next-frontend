@@ -34,7 +34,6 @@ const categories = [
 export default function SupportTicketModal({ isOpen, setIsOpen }) {
   // local hooks
 
-
   const {
     register,
     handleSubmit,
@@ -80,11 +79,6 @@ export default function SupportTicketModal({ isOpen, setIsOpen }) {
             </Select>
 
             <input {...register("category")} type="hidden" />
-          </div>
-
-
-          <div>
-            
           </div>
         </form>
       </div>
