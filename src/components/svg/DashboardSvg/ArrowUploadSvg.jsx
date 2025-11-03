@@ -11,9 +11,9 @@ export default function ArrowUploadSvg({fillColor}) {
       <path
         d="M6 20H18M12 16V4M12 4L15.5 7.5M12 4L8.5 7.5"
         stroke={fillColor || "#888E9C"}
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

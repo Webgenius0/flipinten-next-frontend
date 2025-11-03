@@ -2,8 +2,6 @@ import React from "react";
 import WhiteBox from "../../common/Box/WhiteBox";
 import useOverviewRecentTicketsQuery from "@/hooks/Dashboard/useOverviewRecentTicketsQuery";
 import useOverviewRecentTransactionsQuery from "@/hooks/Dashboard/useOverviewRecentTransactionsQuery";
-import UploadSvg from "@/components/svg/DashboardSvg/UploadSvg";
-import ArrowUploadSvg from "@/components/svg/DashboardSvg/ArrowUploadSvg";
 import DownloadSvg from "@/components/svg/DashboardSvg/DownloadSvg";
 
 export default function DashboardOverviewRecentInfo() {
