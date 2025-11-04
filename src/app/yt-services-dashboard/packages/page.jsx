@@ -1,7 +1,6 @@
-import React from 'react'
+import YtServicesDashPackages from "@/pages/YtServicesDashboardPages/YtServicesDashPackages";
+import React from "react";
 
 export default function page() {
-  return (
-    <div>packages</div>
-  )
+  return <YtServicesDashPackages />;
 }
