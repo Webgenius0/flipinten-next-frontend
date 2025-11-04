@@ -1,7 +1,11 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import YtPackagesSeoAndPromotion from "@/components/YtServicesDashboard/YtServicesPackages/YtPackagesSeoAndPromotion";
+import YtMyOrdersCorporateVideoOrders from "@/components/YtServicesDashboard/YtServicesMyOrders/YtMyOrdersCorporateVideoOrders";
+import YtMyOrdersSeoOrders from "@/components/YtServicesDashboard/YtServicesMyOrders/YtMyOrdersSeoOrders";
+import YtMyOrdersVoiceoverOrders from "@/components/YtServicesDashboard/YtServicesMyOrders/YtMyOrdersVoiceoverOrders";
+import YtMyOrdersYtVideoOrders from "@/components/YtServicesDashboard/YtServicesMyOrders/YtMyOrdersYtVideoOrders";
+import React from "react";
 
-export default function YtServicesDashPackages() {
+export default function YtServicesDashMyOrdersPage() {
   return (
     <div className="flex w-full flex-col gap-6">
       <Tabs defaultValue="seo">
@@ -11,37 +15,37 @@ export default function YtServicesDashPackages() {
           {/* tab options */}
           <TabsList className={"w-full justify-between border-none"}>
             <TabsTrigger className={"rounded-xl"} value="seo">
-              SEO & Promotion
+              SEO Orders
             </TabsTrigger>
             <TabsTrigger className={"rounded-xl"} value="videos">
-              Yt Videos
+              Yt Videos Orders
             </TabsTrigger>
             <TabsTrigger className={"rounded-xl"} value="corporate">
-              Corporate Video
+              Corporate Video Orders
             </TabsTrigger>
             <TabsTrigger className={"rounded-xl"} value="voiceover">
-              Voiceover Service
+              Voiceover Orders
             </TabsTrigger>
           </TabsList>
         </div>
 
         {/* tab 1 */}
         <TabsContent className={"space-y-12"} value="seo">
-          <YtPackagesSeoAndPromotion />
+          <YtMyOrdersSeoOrders />
         </TabsContent>
 
         {/* tab 2  */}
         <TabsContent className={"space-y-12"} value="videos">
-          <YtPackagesSeoAndPromotion />
+          <YtMyOrdersYtVideoOrders />
         </TabsContent>
 
         {/* tab 3 */}
         <TabsContent className={"space-y-12"} value="corporate">
-          <YtPackagesSeoAndPromotion />
+          <YtMyOrdersCorporateVideoOrders />
         </TabsContent>
         {/* tab 4 */}
         <TabsContent className={"space-y-12"} value="voiceover">
-          <YtPackagesSeoAndPromotion />
+          <YtMyOrdersVoiceoverOrders />
         </TabsContent>
       </Tabs>
     </div>
