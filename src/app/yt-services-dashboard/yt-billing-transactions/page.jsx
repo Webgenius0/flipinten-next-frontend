@@ -1,5 +1,6 @@
+import YtServicesDashBillingAndTransactionPage from "@/pages/YtServicesDashboardPages/YtServicesDashBillingAndTransactionPage";
 import React from "react";
 
 export default function page() {
-  return <div>yt-billing-transactions</div>;
+  return <YtServicesDashBillingAndTransactionPage />;
 }
