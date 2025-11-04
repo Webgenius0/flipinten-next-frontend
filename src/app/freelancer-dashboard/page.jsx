@@ -1,7 +1,6 @@
-import React from 'react'
+import FreelancerDashboardOverview from "@/pages/FreelancerDashboardPages/FreelancerDashboardOverview";
+import React from "react";
 
 export default function page() {
-  return (
-    <div>page</div>
-  )
+  return <FreelancerDashboardOverview />;
 }

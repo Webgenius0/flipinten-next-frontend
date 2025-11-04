@@ -6,7 +6,7 @@ import FreelancerdashboardSidebarLinks from './../../components/FreelancerDashbo
 export default function FreelancerDashboardSidebar() {
   return (
     <aside className="w-full h-full flex flex-col justify-between p-8">
-      <div className="w-full h-full flex flex-col gap-20">
+      <div className="w-full h-full flex flex-col gap-12">
         <LogoIcon />
 
         <FreelancerdashboardSidebarLinks />
