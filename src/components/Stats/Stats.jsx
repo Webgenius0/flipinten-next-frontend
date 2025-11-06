@@ -69,12 +69,49 @@ const statInfo = [
   },
 ];
 
+const statSideValue = [
+  {
+    id: 1,
+    value: 0,
+  },
+  {
+    id: 2,
+    value: 50,
+  },
+  {
+    id: 3,
+    value: 100,
+  },
+  {
+    id: 4,
+    value: 200,
+  },
+  {
+    id: 5,
+    value: 400,
+  },
+  {
+    id: 6,
+    value: 600,
+  },
+  {
+    id: 7,
+    value: 900,
+  },
+]
+
 const Stats = () => {
   return (
-    <section className="py-32">
+    <section className="pb-8">
       <style>{css}</style>
-      <div className="gradient container">
-        <div className="relative mx-auto mt-20 flex h-[300px] w-full items-end justify-between gap-2">
+      <h3 className="text-xl font-medium text-neutral600">Earning Snapshot</h3>
+      <div className="gradient container  flex items-end gap-7 mt-6">
+        <div className="h-[300px] flex flex-col-reverse justify-between text-neutral50">
+           {
+            statSideValue?.map((stat, idx) => <p key={idx}>{stat?.value}</p>)
+           }
+        </div>
+        <div className="relative mx-auto flex h-[300px] w-full items-end justify-between gap-2">
           {
             statInfo?.map((props, index) => (
               <motion.div
@@ -119,7 +156,7 @@ const BarChart = ({
           animate={{ opacity: 1, y: 0, height: `100%` }}
           transition={{ duration: 0.5, type: "spring", damping: 20, delay }}
             className={cn(
-              "absolute bottom-0 mt-auto w-full rounded-[40px]  group-hover:bg-linear-to-t from-green-400/20 to-green-200/10 p-3 text-white",
+              "absolute bottom-0 mt-auto w-full rounded-[40px]  group-hover:bg-linear-to-t from-[#1BBF70]/25 to-green-200/10 p-3 text-white",
               className
             )}
         >
