@@ -76,7 +76,7 @@ export default function FreelancerOverviewBottomTable() {
       cell: (info) => {
         const data = info?.getValue();
         return (
-          <button className="w-[120px] py-2 px-4 border border-[#1CCC62] text-[#1CCC62] bg-[white] rounded-sm text-sm flex items-center justify-center gap-2 cursor-pointer ">
+          <button className="w-[120px] mx-auto py-2 px-4 border border-[#1CCC62] text-[#1CCC62] bg-[white] rounded-sm text-sm flex items-center justify-center gap-2 cursor-pointer ">
             {data}
             <p className="w-4 h-4">
               <ArrowSvg fillColor={'#1CCC62'} strokeWidth={1} />
