@@ -12,16 +12,18 @@ import {
   getCoreRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import useGetFreelancerOverviewActiveJovTableData from "@/hooks/FreelancerDashboardHooks/useGetFreelancerOverviewActiveJovTableData";
 import React from "react";
 import ArrowSvg from "@/components/svg/ArrowSvg";
+import useGetMyBidsTableData from "@/hooks/FreelancerDashboardHooks/FreelancerMyBidsHooks/useGetMyBidsTableData";
 
-export default function FreelancerOverviewBottomTable() {
-  const { jobList } = useGetFreelancerOverviewActiveJovTableData();
 
-  const progress = "text-[#0048FF] bg-[#0048FF]/15";
-  const review = "text-[#5500FF] bg-[#5500FF26]";
-  const revision = "text-[#FF9D00] bg-[#FF9D00]/15";
+export default function FreelancerMyBidsBidsTable() {
+  const { lists } = useGetMyBidsTableData();
+
+  const awarded = "text-[#1CCC62] bg-[#1CCC62]/15";
+  const submitted = "text-[#1447E6] bg-[#1447E6]/15";
+  const rejected = "text-[#E52621] bg-[#E52621]/15";
+  const listed = "text-[#FFC700] bg-[#FFC700]/10";
 
   const columns = [
     {
@@ -29,20 +31,16 @@ export default function FreelancerOverviewBottomTable() {
       header: "Job Id",
     },
     {
-      accessorKey: "projectTitle",
-      header: "Project Title",
-      cell: (info) => {
-        const data = info?.getValue();
-        return (
-          <p className="py-2 px-4 border border-neutral500 rounded-full text-sm ">
-            {data}
-          </p>
-        );
-      },
+      accessorKey: "role",
+      header: "Role",
     },
     {
-      accessorKey: "client",
-      header: "Client",
+      accessorKey: "proposedFee",
+      header: "Proposed Fee",
+    },
+    {
+      accessorKey: "cta",
+      header: "CTA",
     },
 
     {
@@ -52,12 +50,14 @@ export default function FreelancerOverviewBottomTable() {
         const status = info?.getValue();
         return (
           <p
-            className={`py-1 px-6 rounded-full text-sm ${
-              status.toLowerCase() === "revision"
-                ? revision
-                : status?.toLowerCase() === "review"
-                ? review
-                : progress
+            className={`w-28 mx-auto py-1 px-6 rounded-full text-sm ${
+              status.toLowerCase() === "awarded"
+                ? awarded
+                : status?.toLowerCase() === "shortlisted"
+                ? listed
+                : status?.toLowerCase() === "rejected"
+                ? rejected
+                : submitted
             }`}
           >
             {status}
@@ -66,8 +66,8 @@ export default function FreelancerOverviewBottomTable() {
       },
     },
     {
-      accessorKey: "deadline",
-      header: "Deadline",
+      accessorKey: "lastUpdated",
+      header: "Last Updated",
     },
 
     {
@@ -89,12 +89,13 @@ export default function FreelancerOverviewBottomTable() {
 
   const tableInstance = useReactTable({
     columns,
-    data: jobList,
+    data: lists,
     getCoreRowModel: getCoreRowModel(),
   });
 
   return (
     <div className="bg-white w-full p-8 rounded-2xl">
+        <h3 className="text-2xl font-bold mb-4">My Bids ({lists?.length})</h3>
       <Table className={"rounded-lg overflow-hidden text-base text-[#1C1D20]"}>
         <TableHeader>
           {tableInstance?.getHeaderGroups()?.map((headerGroup, idx) => (

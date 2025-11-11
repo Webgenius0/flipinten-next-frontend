@@ -11,11 +11,11 @@ const DashboardNavLinks = [
     icon: DashboardOverviewSVG,
     link: "/freelancer-dashboard",
   },
-//   {
-//     title: "Freelancer - My Bids",
-//     icon: DashboardYoutubeServiceSVG,
-//     link: "/freelancer-dashboard/freelancer-my-bids",
-//   },
+  {
+    title: "Freelancer - My Bids",
+    icon: DashboardYoutubeServiceSVG,
+    link: "/freelancer-dashboard/freelancer-my-bids",
+  },
 //   {
 //     title: "Freelancer - Active Jobs",
 //     icon: DashboardYoutubeServiceSVG,
