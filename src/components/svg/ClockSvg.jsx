@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function ClockSvg() {
+export default function ClockSvg({className, fill}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-full h-auto"
+      className={`w-full h-auto ${className && className}`}
       viewBox="0 0 36 36"
       fill="none"
     >
@@ -12,7 +12,7 @@ export default function ClockSvg() {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M18.9 17.2545L24.7365 23.091L23.4645 24.3645L17.1 18V9H18.9V17.2545ZM18 33C9.7155 33 3 26.2845 3 18C3 9.7155 9.7155 3 18 3C26.2845 3 33 9.7155 33 18C33 26.2845 26.2845 33 18 33ZM18 31.2C21.5009 31.2 24.8583 29.8093 27.3338 27.3338C29.8093 24.8583 31.2 21.5009 31.2 18C31.2 14.4991 29.8093 11.1417 27.3338 8.66619C24.8583 6.19071 21.5009 4.8 18 4.8C14.4991 4.8 11.1417 6.19071 8.66619 8.66619C6.19071 11.1417 4.8 14.4991 4.8 18C4.8 21.5009 6.19071 24.8583 8.66619 27.3338C11.1417 29.8093 14.4991 31.2 18 31.2Z"
-        fill="#222E48"
+        fill={fill || "#222E48"}
       />
     </svg>
   );

@@ -16,7 +16,7 @@ function AccordionItem({ className, ...props }) {
     <AccordionPrimitive.Item
       data-slot="accordion-item"
       className={cn(
-        "px-8 py-4 data-[state=open]:py-8 transition-all duration-300 rounded-3xl data-[state=open]:shadow-[0_8px_24px_0_rgba(0,66,153,0.08)]",
+        "px-8 py-3 data-[state=open]:py-6 transition-all duration-300 rounded-3xl data-[state=open]:shadow-[0_8px_24px_0_rgba(0,66,153,0.08)]",
         className
       )}
       {...props}
