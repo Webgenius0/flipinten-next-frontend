@@ -12,15 +12,16 @@ const DashboardNavLinks = [
     link: "/freelancer-dashboard",
   },
   {
-    title: "Freelancer - My Bids",
+    title: 'Freelancer - My Bids',
     icon: DashboardYoutubeServiceSVG,
-    link: "/freelancer-dashboard/freelancer-my-bids",
+    link: '/freelancer-dashboard/freelancer-my-bids'
   },
-//   {
-//     title: "Freelancer - Active Jobs",
-//     icon: DashboardYoutubeServiceSVG,
-//     link: "/freelancer-dashboard/freelancer-active-jobs",
-//   },
+  
+  {
+    title: "Freelancer - Active Jobs",
+    icon: DashboardYoutubeServiceSVG,
+    link: "/freelancer-dashboard/freelancer-active-jobs",
+  },
 //   {
 //     title: "Freelancer - Tasks",
 //     icon: DashboardYoutubeServiceSVG,
