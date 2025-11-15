@@ -1,7 +1,8 @@
+import FreelancerDashboardTasks from '@/pages/FreelancerDashboardPages/FreelancerDashboardTasks'
 import React from 'react'
 
 export default function page() {
   return (
-    <div>tasks</div>
+    <div><FreelancerDashboardTasks/></div>
   )
 }

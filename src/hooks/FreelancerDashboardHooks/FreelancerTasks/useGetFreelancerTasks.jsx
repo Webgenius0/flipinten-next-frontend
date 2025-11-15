@@ -1,0 +1,61 @@
+export default function useGetFreelancerTasks() {
+  const tasks = [
+    {
+      id: 1,
+      title: "Product Ad video Edit",
+      jobId: "Job-2025-0123",
+      assignedBy: "Protocol by Priya Sharma",
+      status: "Progress",
+      deadline: "12 Oct 2025 (3 days left)",
+      actions: ["View Task", "Mark As Complete"],
+    },
+    {
+      id: 2,
+      title: "Product Ad video Edit",
+      jobId: "Job-2025-0123",
+      status: "Progress",
+      assignedBy: "Protocol by Priya Sharma",
+      deadline: "12 Oct 2025 (3 days left)",
+      actions: ["View Task", "Mark As Complete"],
+    },
+    {
+      id: 3,
+      title: "Product Ad video Edit",
+      jobId: "Job-2025-0123",
+      status: "Progress",
+      assignedBy: "Protocol by Priya Sharma",
+      deadline: "12 Oct 2025 (3 days left)",
+      actions: ["View Task", "Mark As Complete"],
+      overallStatus: "In Progress",
+    },
+    {
+      id: 1,
+      title: "Product Ad video Edit",
+      jobId: "Job-2025-0123",
+      assignedBy: "Protocol by Priya Sharma",
+      status: "Progress",
+      deadline: "12 Oct 2025 (3 days left)",
+      actions: ["View Task", "Mark As Complete"],
+    },
+    {
+      id: 2,
+      title: "Product Ad video Edit",
+      jobId: "Job-2025-0123",
+      status: "Progress",
+      assignedBy: "Protocol by Priya Sharma",
+      deadline: "12 Oct 2025 (3 days left)",
+      actions: ["View Task", "Mark As Complete"],
+    },
+    {
+      id: 3,
+      title: "Product Ad video Edit",
+      jobId: "Job-2025-0123",
+      status: "Progress",
+      assignedBy: "Protocol by Priya Sharma",
+      deadline: "12 Oct 2025 (3 days left)",
+      actions: ["View Task", "Mark As Complete"],
+      overallStatus: "In Progress",
+    },
+  ];
+  return { tasks };
+}
